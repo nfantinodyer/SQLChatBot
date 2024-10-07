@@ -4658,5 +4658,9 @@
     {
         "prompt": "Generate SQL query for: MS Access Sgn() Function",
         "sql": "SELECT Sgn(243.5) AS SgnNum;"
+    },
+    {
+        "prompt": "Generate SQL query for return the first and last name of employees with the employee id that is greater than 10000",
+        "sql": "SELECT Employee.FirstName,Employee.LastName FROM Employee WHERE Employee.ID>10000;"
     }
 ]

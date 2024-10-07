@@ -1,7 +1,6 @@
 import json
 import torch
 from transformers import T5Tokenizer, T5ForConditionalGeneration
-from flask import Flask, request, jsonify
 
 # Load the trained model and tokenizer
 model_path = './fine_tuned_t5_sql'
@@ -43,11 +42,21 @@ def main():
             save_interaction(user_input, generated_query)
 
 def save_interaction(prompt, sql):
-    # This function saves the interactions to a JSON file for later training
-    data = {'prompt': prompt, 'sql': sql}
-    with open('trainingData.json', 'a') as f:
-        json.dump(data, f)
-        f.write('\n')
+    try:
+        # Load the existing data into a list
+        with open('trainingData.json', 'r') as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        data = []  # If the file does not exist, create a new list
+    except json.JSONDecodeError:
+        data = []  # If the file is corrupt, create a new list
+
+    # Append the new data point
+    data.append({'prompt': prompt, 'sql': sql})
+
+    # Write the updated data back to the file
+    with open('trainingData.json', 'w') as file:
+        json.dump(data, file, indent=4)
 
     print("Interaction saved.")
 
