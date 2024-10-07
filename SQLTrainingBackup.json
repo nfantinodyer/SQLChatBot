@@ -1,0 +1,4662 @@
+[
+    {
+        "prompt": "Generate SQL query for: SQL LIKE",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE 'a%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE '%a';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE",
+        "sql": "SELECT * FROM Customers   WHERE CustomerName LIKE '%or%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE",
+        "sql": "SELECT * FROM Customers   WHERE CustomerName LIKE 'a__%';"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DEGREES() Function",
+        "sql": "SELECT DEGREES(1.5);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DEGREES() Function",
+        "sql": "SELECT DEGREES(PI()*2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SQUARE() Function",
+        "sql": "SELECT SQUARE(64);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SQUARE() Function",
+        "sql": "SELECT SQUARE(13);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE",
+        "sql": "ALTER TABLE CustomersADD Email varchar(255);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE",
+        "sql": "ALTER TABLE CustomersDROP COLUMN Email;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP TABLE, TRUNCATE TABLE",
+        "sql": "DROP TABLE Shippers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP TABLE, TRUNCATE TABLE",
+        "sql": "TRUNCATE TABLE Categories;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT DISTINCT",
+        "sql": "SELECT DISTINCT Country FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Date() Function",
+        "sql": "SELECT CustomerName, Date() AS CurrentDateFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AND Operator",
+        "sql": "SELECT *  FROM Customers  WHERE Country = 'Spain' AND CustomerName LIKE 'G%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AND Operator",
+        "sql": "SELECT * FROM Customers  WHERE Country = 'Germany'  AND City = 'Berlin'  AND PostalCode > 12000;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AND Operator",
+        "sql": "SELECT * FROM Customers  WHERE Country = 'Spain'  AND (CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AND Operator",
+        "sql": "SELECT * FROM Customers  WHERE Country = 'Spain'  AND CustomerName LIKE 'G%' OR CustomerName LIKE 'R%';"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DatePart() Function",
+        "sql": "SELECT DatePart(\"yyyy\", #09/05/2017#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DatePart() Function",
+        "sql": "SELECT DatePart(\"m\", #09/05/2017#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DatePart() Function",
+        "sql": "SELECT DatePart(\"w\", Date());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ACOS() Function",
+        "sql": "SELECT ACOS(0.25);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ACOS() Function",
+        "sql": "SELECT ACOS(-0.8);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ANY and ALL Operators",
+        "sql": "SELECT column_name(s)   FROM table_name   WHERE    column_name operator ANY  (SELECT column_name  FROM table_name  WHERE   condition);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ANY and ALL Operators",
+        "sql": "SELECT ALL column_name(s)   FROM table_name   WHERE    condition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ANY and ALL Operators",
+        "sql": "SELECT column_name(s)   FROM table_name   WHERE    column_name operator ALL  (SELECT column_name  FROM table_name  WHERE condition);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ANY and ALL Operators",
+        "sql": "SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID  FROM OrderDetails  WHERE Quantity = 10);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ANY and ALL Operators",
+        "sql": "SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID     FROM OrderDetails  WHERE Quantity > 99);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ANY and ALL Operators",
+        "sql": "SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID     FROM OrderDetails  WHERE Quantity > 1000);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ANY and ALL Operators",
+        "sql": "SELECT ALL ProductNameFROM ProductsWHERE TRUE;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ANY and ALL Operators",
+        "sql": "SELECT ProductNameFROM ProductsWHERE ProductID = ALL  (SELECT ProductID  FROM OrderDetails  WHERE Quantity = 10);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYOFYEAR() Function",
+        "sql": "SELECT DAYOFYEAR(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYOFYEAR() Function",
+        "sql": "SELECT DAYOFYEAR(\"2017-01-01\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYOFYEAR() Function",
+        "sql": "SELECT DAYOFYEAR(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server AVG() Function",
+        "sql": "SELECT AVG(Price) AS    AveragePrice FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server AVG() Function",
+        "sql": "SELECT * FROM ProductsWHERE Price > (SELECT AVG(Price) FROM Products);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Day() Function",
+        "sql": "SELECT Day(#05/17/2017#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Day() Function",
+        "sql": "SELECT Day(Date());"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Day() Function",
+        "sql": "SELECT Day(BirthDate) FROM Employees;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL WHERE",
+        "sql": "SELECT * FROM Customers WHERE Country='Mexico';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL WHERE",
+        "sql": "SELECT * FROM Customers  WHERE CustomerID=1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ADD CONSTRAINT",
+        "sql": "ALTER TABLE PersonsADD CONSTRAINT PK_Person PRIMARY KEY (ID,LastName);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FIND_IN_SET() Function",
+        "sql": "SELECT FIND_IN_SET(\"q\", \"s,q,l\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FIND_IN_SET() Function",
+        "sql": "SELECT FIND_IN_SET(\"a\", \"s,q,l\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FIND_IN_SET() Function",
+        "sql": "SELECT FIND_IN_SET(\"q\", null);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL COT() Function",
+        "sql": "SELECT COT(6);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL COT() Function",
+        "sql": "SELECT COT(-2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ADDDATE() Function",
+        "sql": "SELECT ADDDATE(\"2017-06-15\", INTERVAL 10 DAY);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ADDDATE() Function",
+        "sql": "SELECT ADDDATE(\"2017-06-15 09:34:21\", INTERVAL 15 MINUTE);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ADDDATE() Function",
+        "sql": "SELECT ADDDATE(\"2017-06-15 09:34:21\", INTERVAL -3 HOUR);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ADDDATE() Function",
+        "sql": "SELECT ADDDATE(\"2017-06-15\", INTERVAL -2 MONTH);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURRENT_TIME() Function",
+        "sql": "SELECT CURRENT_TIME();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURRENT_TIME() Function",
+        "sql": "SELECT CURRENT_TIME() + 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE DATABASE Statement",
+        "sql": "CREATE DATABASE databasename;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE DATABASE Statement",
+        "sql": "CREATE DATABASE testDB;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL POW() Function",
+        "sql": "SELECT POW(4, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL POW() Function",
+        "sql": "SELECT POW(8, 3);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server UPPER() Function",
+        "sql": "SELECT UPPER('SQL Tutorial is FUN!');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server UPPER() Function",
+        "sql": "SELECT UPPER(CustomerName) AS UppercaseCustomerNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL REPLACE() Function",
+        "sql": "SELECT REPLACE(\"SQL Tutorial\", \"SQL\", \"HTML\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL REPLACE() Function",
+        "sql": "SELECT REPLACE(\"XYZ FGH XYZ\", \"X\", \"M\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL REPLACE() Function",
+        "sql": "SELECT REPLACE(\"XYZ FGH XYZ\", \"X\", \"m\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL REPLACE() Function",
+        "sql": "SELECT REPLACE(\"XYZ FGH XYZ\", \"x\", \"m\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FORMAT() Function",
+        "sql": "SELECT FORMAT(250500.5634, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FORMAT() Function",
+        "sql": "SELECT FORMAT(250500.5634, 0);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server TRIM() Function",
+        "sql": "SELECT TRIM('     SQL Tutorial!     ') AS TrimmedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server TRIM() Function",
+        "sql": "SELECT TRIM('#! ' FROM '    #SQL Tutorial!    ') AS    TrimmedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE OR REPLACE VIEW",
+        "sql": "CREATE OR REPLACE VIEW [Brazil Customers] AS SELECT CustomerName, ContactName, City FROM Customers WHERE Country = \"Brazil\";"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE OR REPLACE VIEW",
+        "sql": "SELECT * FROM [Brazil    Customers];"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME_FORMAT() Function",
+        "sql": "SELECT TIME_FORMAT(\"19:30:10\", \"%H %i %s\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME_FORMAT() Function",
+        "sql": "SELECT TIME_FORMAT(\"19:30:10\", \"%h %i %s %p\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME_FORMAT() Function",
+        "sql": "SELECT TIME_FORMAT(\"19:30:10\", \"%r\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME_FORMAT() Function",
+        "sql": "SELECT TIME_FORMAT(\"19:30:10\", \"%T\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL IS NOT NULL",
+        "sql": "SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address    IS NOT NULL;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server GETUTCDATE() Function",
+        "sql": "SELECT    GETUTCDATE();"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY Constraint",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     PRIMARY KEY (ID) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY Constraint",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL PRIMARY KEY,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY Constraint",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     CONSTRAINT PK_Person PRIMARY KEY (ID,LastName) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY Constraint",
+        "sql": "ALTER TABLE Persons ADD PRIMARY KEY (ID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY Constraint",
+        "sql": "ALTER TABLE Persons ADD CONSTRAINT PK_Person PRIMARY KEY (ID,LastName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY Constraint",
+        "sql": "ALTER TABLE Persons DROP PRIMARY KEY;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY Constraint",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT PK_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CEILING() Function",
+        "sql": "SELECT CEILING(25.75);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CEILING() Function",
+        "sql": "SELECT CEILING(25);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server FLOOR() Function",
+        "sql": "SELECT FLOOR(25.75) AS FloorValue;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server FLOOR() Function",
+        "sql": "SELECT FLOOR(25) AS FloorValue;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server FLOOR() Function",
+        "sql": "SELECT FLOOR(-13.5) AS FloorValue;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, REPLACE VIEW, DROP VIEW Statements",
+        "sql": "CREATE VIEW view_name AS SELECT column1, column2, ... FROM table_name WHERE condition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, REPLACE VIEW, DROP VIEW Statements",
+        "sql": "CREATE VIEW [Brazil Customers] AS SELECT CustomerName, ContactName FROM Customers WHERE Country = 'Brazil';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, REPLACE VIEW, DROP VIEW Statements",
+        "sql": "SELECT * FROM [Brazil Customers];"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, REPLACE VIEW, DROP VIEW Statements",
+        "sql": "CREATE VIEW [Products Above Average Price] AS SELECT ProductName, Price FROM Products WHERE Price > (SELECT AVG(Price) FROM Products);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, REPLACE VIEW, DROP VIEW Statements",
+        "sql": "SELECT * FROM [Products Above Average Price];"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, REPLACE VIEW, DROP VIEW Statements",
+        "sql": "CREATE OR REPLACE VIEW view_name AS SELECT column1, column2, ... FROM table_name WHERE condition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, REPLACE VIEW, DROP VIEW Statements",
+        "sql": "CREATE OR REPLACE VIEW [Brazil Customers] AS SELECT CustomerName, ContactName, City FROM Customers WHERE Country = 'Brazil';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, REPLACE VIEW, DROP VIEW Statements",
+        "sql": "DROP VIEW view_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, REPLACE VIEW, DROP VIEW Statements",
+        "sql": "DROP VIEW [Brazil Customers];"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOCATE() Function",
+        "sql": "SELECT LOCATE(\"3\", \"W3Schools.com\") AS MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOCATE() Function",
+        "sql": "SELECT LOCATE(\"com\", \"W3Schools.com\", 3) AS MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOCATE() Function",
+        "sql": "SELECT LOCATE(\"a\", CustomerName)FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access InStr() Function",
+        "sql": "SELECT InStr(\"Customer\", \"t\") AS MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_ADD() Function",
+        "sql": "SELECT DATE_ADD(\"2017-06-15\", INTERVAL 10 DAY);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_ADD() Function",
+        "sql": "SELECT DATE_ADD(\"2017-06-15 09:34:21\", INTERVAL 15 MINUTE);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_ADD() Function",
+        "sql": "SELECT DATE_ADD(\"2017-06-15 09:34:21\", INTERVAL -3 HOUR);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_ADD() Function",
+        "sql": "SELECT DATE_ADD(\"2017-06-15\", INTERVAL -2 MONTH);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Right() Function",
+        "sql": "SELECT    Right(\"SQL Tutorial is cool\", 4) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Right() Function",
+        "sql": "SELECT Right(CustomerName, 5) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server COT() Function",
+        "sql": "SELECT COT(6);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server COT() Function",
+        "sql": "SELECT COT(-2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL YEAR() Function",
+        "sql": "SELECT YEAR(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL YEAR() Function",
+        "sql": "SELECT YEAR(\"2017-06-15 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL YEAR() Function",
+        "sql": "SELECT YEAR(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME_TO_SEC() Function",
+        "sql": "SELECT TIME_TO_SEC(\"19:30:10\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME_TO_SEC() Function",
+        "sql": "SELECT TIME_TO_SEC(\"00:00:05\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME_TO_SEC() Function",
+        "sql": "SELECT TIME_TO_SEC(\"03:30:00.999999\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME_TO_SEC() Function",
+        "sql": "SELECT TIME_TO_SEC(\"-03:30:00\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT",
+        "sql": "CREATE TABLE Persons (     City varchar(255) DEFAULT 'Sandnes' );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT",
+        "sql": "CREATE TABLE Orders (     OrderDate date DEFAULT GETDATE() );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT",
+        "sql": "ALTER TABLE Persons ALTER City SET DEFAULT 'Sandnes';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT",
+        "sql": "ALTER TABLE PersonsADD CONSTRAINT df_City DEFAULT 'Sandnes' FOR City;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT",
+        "sql": "ALTER TABLE Persons ALTER COLUMN City SET DEFAULT 'Sandnes';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT",
+        "sql": "ALTER TABLE Persons MODIFY City DEFAULT 'Sandnes';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT",
+        "sql": "ALTER TABLE Persons ALTER City DROP DEFAULT;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT",
+        "sql": "ALTER TABLE Persons ALTER COLUMN City DROP DEFAULT;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "CREATE DATABASE testDB;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "CREATE TABLE Persons (     PersonID int,     LastName varchar(255),     FirstName varchar(255),     Address varchar(255),     City varchar(255)  );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "CREATE TABLE TestTable ASSELECT customername, contactname FROM customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "CREATE INDEX idx_lastname ON Persons (LastName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "CREATE INDEX idx_pname ON Persons (LastName, FirstName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "CREATE UNIQUE INDEX uidx_pid ON Persons (PersonID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "CREATE VIEW [Brazil Customers] AS SELECT CustomerName, ContactName FROM Customers WHERE Country = \"Brazil\";"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "CREATE OR REPLACE VIEW [Brazil Customers] AS SELECT CustomerName, ContactName, City FROM Customers WHERE Country = \"Brazil\";"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "SELECT * FROM [Brazil    Customers];"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE",
+        "sql": "EXEC SelectAllCustomers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEFROMPARTS() Function",
+        "sql": "SELECT DATEFROMPARTS(2018, 10, 31) AS DateFromParts;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Comments",
+        "sql": "-- Select all: SELECT * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Comments",
+        "sql": "SELECT * FROM Customers -- WHERE City='Berlin';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Comments",
+        "sql": "-- SELECT * FROM Customers; SELECT * FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Comments",
+        "sql": "/*Select all the columns of all the records in the Customers table:*/ SELECT * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Comments",
+        "sql": "/*SELECT * FROM Customers; SELECT * FROM Products; SELECT * FROM Orders; SELECT * FROM Categories;*/ SELECT * FROM Suppliers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Comments",
+        "sql": "SELECT CustomerName, /*City,*/ Country FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Comments",
+        "sql": "SELECT * FROM Customers WHERE (CustomerName LIKE 'L%' OR CustomerName LIKE 'R%' /*OR CustomerName LIKE 'S%' OR CustomerName LIKE 'T%'*/ OR CustomerName LIKE 'W%') AND Country='USA' ORDER BY CustomerName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT Statement",
+        "sql": "SELECT CustomerName, City FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT Statement",
+        "sql": "SELECT * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL NOW() Function",
+        "sql": "SELECT    NOW();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL NOW() Function",
+        "sql": "SELECT    NOW() + 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access UCase() Function",
+        "sql": "SELECT UCASE(CustomerName) AS UppercaseCustomerNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL REVERSE() Function",
+        "sql": "SELECT REVERSE(\"SQL Tutorial\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL REVERSE() Function",
+        "sql": "SELECT REVERSE(CustomerName)FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server TRANSLATE() Function",
+        "sql": "SELECT TRANSLATE('Monday', 'Monday', 'Sunday'); // Results in Sunday"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server TRANSLATE() Function",
+        "sql": "SELECT TRANSLATE('3*[2+1]/{8-4}', '[]{}', '()()'); // Results in 3*(2+1)/(8-4)"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MONTH() Function",
+        "sql": "SELECT MONTH(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MONTH() Function",
+        "sql": "SELECT MONTH(\"2017-06-15 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MONTH() Function",
+        "sql": "SELECT MONTH(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT UC_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP INDEX UC_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT PK_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP PRIMARY KEY;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP CONSTRAINT",
+        "sql": "ALTER TABLE Orders DROP CONSTRAINT FK_PersonOrder;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP CONSTRAINT",
+        "sql": "ALTER TABLE Orders DROP FOREIGN KEY FK_PersonOrder;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT CHK_PersonAge;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP CHECK CHK_PersonAge;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW",
+        "sql": "CREATE VIEW [Brazil    Customers] AS SELECT    CustomerName, ContactName FROM Customers WHERE    Country = \"Brazil\";"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW",
+        "sql": "SELECT * FROM [Brazil Customers];"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Stored Procedures",
+        "sql": "CREATE PROCEDURE procedure_name   ASsql_statement   GO;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Stored Procedures",
+        "sql": "EXEC procedure_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Stored Procedures",
+        "sql": "CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Stored Procedures",
+        "sql": "EXEC SelectAllCustomers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Stored Procedures",
+        "sql": "CREATE PROCEDURE SelectAllCustomers    @City nvarchar(30)ASSELECT * FROM Customers WHERE    City = @CityGO;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Stored Procedures",
+        "sql": "EXEC SelectAllCustomers @City = 'London';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Stored Procedures",
+        "sql": "CREATE PROCEDURE SelectAllCustomers    @City nvarchar(30), @PostalCode nvarchar(10)ASSELECT * FROM Customers WHERE    City = @City AND PostalCode = @PostalCodeGO;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Stored Procedures",
+        "sql": "EXEC SelectAllCustomers @City = 'London', @PostalCode = 'WA1 1DP';"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access TimeSerial() Function",
+        "sql": "SELECT TimeSerial(15, 9, 20);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access TimeSerial() Function",
+        "sql": "SELECT TimeSerial(12-2, 40-5, 20-5);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ROUND() Function",
+        "sql": "SELECT ROUND(135.375, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ROUND() Function",
+        "sql": "SELECT ROUND(345.156,    0);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ROUND() Function",
+        "sql": "SELECT ProductName, Price, ROUND(Price, 1) AS RoundedPriceFROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server RAND() Function",
+        "sql": "SELECT RAND();"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server RAND() Function",
+        "sql": "SELECT RAND(6);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server RAND() Function",
+        "sql": "SELECT RAND()*(10-5)+5;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server RAND() Function",
+        "sql": "SELECT FLOOR(RAND()*(10-5+1)+5);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY",
+        "sql": "CREATE TABLE Orders (     OrderID int NOT NULL,     OrderNumber int NOT NULL,     PersonID int,     PRIMARY KEY (OrderID),     FOREIGN KEY (PersonID) REFERENCES Persons(PersonID) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY",
+        "sql": "CREATE TABLE Orders (     OrderID int NOT NULL PRIMARY KEY,     OrderNumber int NOT NULL,     PersonID int FOREIGN KEY REFERENCES Persons(PersonID) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY",
+        "sql": "CREATE TABLE Orders (     OrderID int NOT NULL,     OrderNumber int NOT NULL,     PersonID int,     PRIMARY KEY (OrderID),     CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID)     REFERENCES Persons(PersonID) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY",
+        "sql": "ALTER TABLE Orders ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY",
+        "sql": "ALTER TABLE Orders ADD CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY",
+        "sql": "ALTER TABLE Orders DROP FOREIGN KEY FK_PersonOrder;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY",
+        "sql": "ALTER TABLE Orders DROP CONSTRAINT FK_PersonOrder;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL BIN() Function",
+        "sql": "SELECT BIN(15);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL BIN() Function",
+        "sql": "SELECT BIN(111);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL BIN() Function",
+        "sql": "SELECT BIN(8);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SECOND() Function",
+        "sql": "SELECT SECOND(\"2017-06-20 09:34:00.000023\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SECOND() Function",
+        "sql": "SELECT SECOND(\"23:59:59\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL OR",
+        "sql": "SELECT * FROM Customers   WHERE City='Berlin' OR City='M\u00c3\u00bcnchen';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FROM",
+        "sql": "SELECT CustomerName, City FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FROM",
+        "sql": "SELECT * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FROM",
+        "sql": "DELETE FROM Customers  WHERE CustomerName='Alfreds Futterkiste';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEPART() Function",
+        "sql": "SELECT DATEPART(year, '2017/08/25') AS DatePartInt;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEPART() Function",
+        "sql": "SELECT DATEPART(yy, '2017/08/25') AS DatePartInt;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEPART() Function",
+        "sql": "SELECT DATEPART(month, '2017/08/25') AS DatePartInt;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEPART() Function",
+        "sql": "SELECT DATEPART(hour, '2017/08/25 08:36') AS DatePartInt;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEPART() Function",
+        "sql": "SELECT DATEPART(minute, '2017/08/25 08:36') AS DatePartInt;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MAKETIME() Function",
+        "sql": "SELECT MAKETIME(11, 35,    4);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MAKETIME() Function",
+        "sql": "SELECT MAKETIME(16,    1, 0);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MAKETIME() Function",
+        "sql": "SELECT MAKETIME(21,    59, 59);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MAKETIME() Function",
+        "sql": "SELECT MAKETIME(838,    59, 59);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE INDEX Statement",
+        "sql": "CREATE INDEX index_name ON table_name (column1, column2, ...);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE INDEX Statement",
+        "sql": "CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE INDEX Statement",
+        "sql": "CREATE INDEX idx_lastname ON Persons (LastName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE INDEX Statement",
+        "sql": "CREATE INDEX idx_pname ON Persons (LastName, FirstName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE INDEX Statement",
+        "sql": "DROP INDEX index_name ON table_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE INDEX Statement",
+        "sql": "DROP INDEX table_name.index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE INDEX Statement",
+        "sql": "DROP INDEX index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE INDEX Statement",
+        "sql": "ALTER TABLE table_nameDROP INDEX index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL STR_TO_DATE() Function",
+        "sql": "SELECT    STR_TO_DATE(\"August 10 2017\", \"%M %d %Y\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL STR_TO_DATE() Function",
+        "sql": "SELECT STR_TO_DATE(\"August,5,2017\", \"%M %e %Y\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL STR_TO_DATE() Function",
+        "sql": "SELECT STR_TO_DATE(\"Monday, August 14, 2017\", \"%W %M %e %Y\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL STR_TO_DATE() Function",
+        "sql": "SELECT STR_TO_DATE(\"2017,8,14 10,40,10\", \"%Y,%m,%d %h,%i,%s\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL OR Operator",
+        "sql": "SELECT *  FROM Customers  WHERE Country = 'Germany' OR Country = 'Spain';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL OR Operator",
+        "sql": "SELECT * FROM Customers  WHERE City = 'Berlin'  OR CustomerName LIKE 'G%'  OR Country = 'Norway';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL OR Operator",
+        "sql": "SELECT * FROM Customers  WHERE Country = 'Spain'  AND (CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL OR Operator",
+        "sql": "SELECT * FROM Customers  WHERE Country = 'Spain'  AND CustomerName LIKE 'G%' OR CustomerName LIKE 'R%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL HAVING Clause",
+        "sql": "SELECT column_name(s)   FROM table_name   WHERE condition   GROUP BY column_name(s)HAVING conditionORDER BY    column_name(s);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL HAVING Clause",
+        "sql": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country   HAVING COUNT(CustomerID) > 5;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL HAVING Clause",
+        "sql": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY CountryHAVING COUNT(CustomerID)    > 5   ORDER BY COUNT(CustomerID) DESC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL HAVING Clause",
+        "sql": "SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrdersFROM    (OrdersINNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID)   GROUP BY LastNameHAVING COUNT(Orders.OrderID) > 10;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL HAVING Clause",
+        "sql": "SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrdersFROM Orders   INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID   WHERE LastName = 'Davolio' OR LastName = 'Fuller'GROUP BY LastNameHAVING    COUNT(Orders.OrderID) > 25;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LEN() Function",
+        "sql": "SELECT    LEN('W3Schools.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LEN() Function",
+        "sql": "SELECT    LEN(' W3Schools.com ');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LEN() Function",
+        "sql": "SELECT    LEN('2017-08');"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DIV Function",
+        "sql": "SELECT 10 DIV 5;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DIV Function",
+        "sql": "SELECT 8 DIV 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LEAST() Function",
+        "sql": "SELECT LEAST(3, 12, 34, 8, 25);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LEAST() Function",
+        "sql": "SELECT LEAST(\"w3Schools.com\", \"microsoft.com\", \"apple.com\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Mid() Function",
+        "sql": "SELECT Mid(\"SQL Tutorial\", 3) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Mid() Function",
+        "sql": "SELECT Mid(CustomerName, 4, 6) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNION ALL",
+        "sql": "SELECT City FROM CustomersUNION ALLSELECT City FROM Suppliers  ORDER BY City;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONNECTION_ID() Function",
+        "sql": "SELECT CONNECTION_ID();"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DateValue() Function",
+        "sql": "SELECT DateValue(\"May 17, 2017\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DateValue() Function",
+        "sql": "SELECT DateValue(\"May 17\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURTIME() Function",
+        "sql": "SELECT CURTIME();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURTIME() Function",
+        "sql": "SELECT CURTIME() + 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE PROCEDURE",
+        "sql": "CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE PROCEDURE",
+        "sql": "EXEC SelectAllCustomers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE table_name ADD column_name datatype;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE CustomersADD Email varchar(255);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE table_name DROP COLUMN column_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE CustomersDROP COLUMN Email;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE table_name   RENAME COLUMN old_name to new_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "EXEC sp_rename 'table_name.old_name',  'new_name',    'COLUMN';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE table_name ALTER COLUMN column_name datatype;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE table_name MODIFY COLUMN column_name datatype;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE table_name MODIFY column_name datatype;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE Persons ADD DateOfBirth date;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE Persons ALTER COLUMN DateOfBirth year;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER TABLE Statement",
+        "sql": "ALTER TABLE Persons DROP COLUMN DateOfBirth;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Replace() Function",
+        "sql": "SELECT Replace(\"My name is Willy Wonka\", \"i\", \"a\") AS ReplaceString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL RIGHT JOIN",
+        "sql": "SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID  ORDER BY Orders.OrderID;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL USER() Function",
+        "sql": "SELECT USER();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TAN() Function",
+        "sql": "SELECT TAN(1.75);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TAN() Function",
+        "sql": "SELECT TAN(-3);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LEFT JOIN Keyword",
+        "sql": "SELECT column_name(s) FROM table1 LEFT JOIN table2 ON table1.column_name = table2.column_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LEFT JOIN Keyword",
+        "sql": "SELECT Customers.CustomerName, Orders.OrderID  FROM Customers  LEFT JOIN Orders  ON Customers.CustomerID = Orders.CustomerID  ORDER BY Customers.CustomerName;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access RTrim() Function",
+        "sql": "SELECT    RTrim(\"SQL Tutorial    \") AS RightTrimmedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SIN() Function",
+        "sql": "SELECT SIN(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SIN() Function",
+        "sql": "SELECT SIN(-1);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INDEX",
+        "sql": "CREATE INDEX idx_lastname ON Persons (LastName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INDEX",
+        "sql": "CREATE INDEX idx_pname ON Persons (LastName, FirstName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INDEX",
+        "sql": "DROP INDEX index_name ON table_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INDEX",
+        "sql": "DROP INDEX table_name.index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INDEX",
+        "sql": "DROP INDEX index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INDEX",
+        "sql": "ALTER TABLE table_nameDROP INDEX index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL IN Operator",
+        "sql": "SELECT * FROM Customers   WHERE Country IN ('Germany', 'France', 'UK');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL IN Operator",
+        "sql": "SELECT * FROM Customers   WHERE Country NOT IN ('Germany', 'France', 'UK');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL IN Operator",
+        "sql": "SELECT * FROM Customers WHERE CustomerID IN (SELECT CustomerID FROM Orders);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL IN Operator",
+        "sql": "SELECT * FROM Customers WHERE CustomerID NOT IN (SELECT CustomerID FROM Orders);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBSTRING() Function",
+        "sql": "SELECT SUBSTRING(\"SQL Tutorial\", 1, 3) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBSTRING() Function",
+        "sql": "SELECT SUBSTRING(CustomerName,    2, 5) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBSTRING() Function",
+        "sql": "SELECT SUBSTRING(\"SQL Tutorial\", -5, 5) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE Statement",
+        "sql": "CREATE TABLE table_name (     column1 datatype,     column2 datatype,     column3 datatype,    .... );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE Statement",
+        "sql": "CREATE TABLE Persons (     PersonID int,     LastName varchar(255),     FirstName varchar(255),     Address varchar(255),     City varchar(255)  );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE Statement",
+        "sql": "CREATE TABLE new_table_name AS       SELECT column1, column2,...    FROM    existing_table_name    WHERE ....;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE Statement",
+        "sql": "CREATE TABLE TestTable ASSELECT customername, contactnameFROM customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY Constraint",
+        "sql": "CREATE TABLE Orders (     OrderID int NOT NULL,     OrderNumber int NOT NULL,     PersonID int,     PRIMARY KEY (OrderID),     FOREIGN KEY (PersonID) REFERENCES Persons(PersonID) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY Constraint",
+        "sql": "CREATE TABLE Orders (     OrderID int NOT NULL PRIMARY KEY,     OrderNumber int NOT NULL,     PersonID int FOREIGN KEY REFERENCES Persons(PersonID) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY Constraint",
+        "sql": "CREATE TABLE Orders (     OrderID int NOT NULL,     OrderNumber int NOT NULL,     PersonID int,     PRIMARY KEY (OrderID),     CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID)     REFERENCES Persons(PersonID) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY Constraint",
+        "sql": "ALTER TABLE Orders ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY Constraint",
+        "sql": "ALTER TABLE Orders ADD CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY Constraint",
+        "sql": "ALTER TABLE Orders DROP FOREIGN KEY FK_PersonOrder;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FOREIGN KEY Constraint",
+        "sql": "ALTER TABLE Orders DROP CONSTRAINT FK_PersonOrder;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT CustomerID AS ID  FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT CustomerID ID  FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT CustomerID AS ID, CustomerName AS Customer  FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT ProductName AS [My Great Products]  FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT ProductName AS \"My Great Products\"  FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country    AS Address  FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Address FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT CustomerName, (Address || ', ' || PostalCode || ' ' || City || ', ' ||    Country) AS AddressFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT * FROM Customers AS Persons;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT o.OrderID, o.OrderDate, c.CustomerNameFROM Customers AS c, Orders AS oWHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Aliases",
+        "sql": "SELECT Orders.OrderID, Orders.OrderDate, Customers.CustomerNameFROM Customers, OrdersWHERE Customers.CustomerName='Around the Horn' AND Customers.CustomerID=Orders.CustomerID;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Hour() Function",
+        "sql": "SELECT    Hour(#14:48:23#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Hour() Function",
+        "sql": "SELECT    Hour(Now());"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Hour() Function",
+        "sql": "SELECT Hour(#24/10/2016 11:18:34 PM#);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ASC",
+        "sql": "SELECT * FROM CustomersORDER BY CustomerName ASC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SESSION_USER Function",
+        "sql": "SELECT SESSION_USER;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FLOOR() Function",
+        "sql": "SELECT FLOOR(25.75);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FLOOR() Function",
+        "sql": "SELECT FLOOR(25);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Trim() Function",
+        "sql": "SELECT Trim(\"    SQL Tutorial    \") AS TrimmedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server FORMAT() Function",
+        "sql": "DECLARE @d DATETIME = '12/01/2018'; SELECT FORMAT (@d, 'd', 'en-US') AS    'US English Result',                  FORMAT (@d, 'd', 'no') AS 'Norwegian Result',                  FORMAT (@d, 'd', 'zu') AS 'Zulu Result';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server FORMAT() Function",
+        "sql": "SELECT    FORMAT(123456789, '##-##-#####');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL EXISTS",
+        "sql": "SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM    Products WHERE SupplierId = Suppliers.supplierId AND Price < 20);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL EXISTS",
+        "sql": "SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM    Products WHERE SupplierId = Suppliers.supplierId AND Price = 22);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE, ALTER TABLE, DROP TABLE, TRUNCATE TABLE",
+        "sql": "CREATE TABLE Persons (     PersonID int,     LastName varchar(255),     FirstName varchar(255),     Address varchar(255),     City varchar(255)  );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE, ALTER TABLE, DROP TABLE, TRUNCATE TABLE",
+        "sql": "CREATE TABLE TestTable ASSELECT customername, contactnameFROM    customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE, ALTER TABLE, DROP TABLE, TRUNCATE TABLE",
+        "sql": "ALTER TABLE CustomersADD Email varchar(255);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE, ALTER TABLE, DROP TABLE, TRUNCATE TABLE",
+        "sql": "ALTER TABLE CustomersDROP COLUMN Email;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE, ALTER TABLE, DROP TABLE, TRUNCATE TABLE",
+        "sql": "DROP TABLE Shippers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE, ALTER TABLE, DROP TABLE, TRUNCATE TABLE",
+        "sql": "TRUNCATE TABLE Categories;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server EXP() Function",
+        "sql": "SELECT EXP(1);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server EXP() Function",
+        "sql": "SELECT EXP(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LEFT JOIN",
+        "sql": "SELECT Customers.CustomerName, Orders.OrderID  FROM Customers  LEFT JOIN Orders  ON Customers.CustomerID = Orders.CustomerID  ORDER BY Customers.CustomerName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ISNULL(), NVL(), IFNULL() and COALESCE() Functions",
+        "sql": "SELECT ProductName, UnitPrice * (UnitsInStock + UnitsOnOrder) FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ISNULL(), NVL(), IFNULL() and COALESCE() Functions",
+        "sql": "SELECT ProductName, UnitPrice * (UnitsInStock + IFNULL(UnitsOnOrder, 0)) FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ISNULL(), NVL(), IFNULL() and COALESCE() Functions",
+        "sql": "SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0)) FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ISNULL(), NVL(), IFNULL() and COALESCE() Functions",
+        "sql": "SELECT ProductName, UnitPrice * (UnitsInStock + ISNULL(UnitsOnOrder, 0)) FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ISNULL(), NVL(), IFNULL() and COALESCE() Functions",
+        "sql": "SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0)) FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ISNULL(), NVL(), IFNULL() and COALESCE() Functions",
+        "sql": "SELECT ProductName, UnitPrice * (UnitsInStock + IIF(IsNull(UnitsOnOrder), 0, UnitsOnOrder)) FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ISNULL(), NVL(), IFNULL() and COALESCE() Functions",
+        "sql": "SELECT ProductName, UnitPrice * (UnitsInStock + NVL(UnitsOnOrder, 0)) FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ISNULL(), NVL(), IFNULL() and COALESCE() Functions",
+        "sql": "SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0)) FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP COLUMN",
+        "sql": "ALTER TABLE CustomersDROP COLUMN ContactName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE DATABASE",
+        "sql": "CREATE DATABASE testDB;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL COUNT() Function",
+        "sql": "SELECT COUNT(ProductID) AS NumberOfProducts FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SUM() Function",
+        "sql": "SELECT SUM(Quantity) AS TotalItemsOrdered FROM OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server YEAR() Function",
+        "sql": "SELECT YEAR('2017/08/25') AS Year;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server YEAR() Function",
+        "sql": "SELECT YEAR('1998/05/25 09:08') AS Year;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FULL OUTER JOIN Keyword",
+        "sql": "SELECT column_name(s)  FROM table1  FULL OUTER JOIN table2 ON table1.column_name = table2.column_name  WHERE condition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FULL OUTER JOIN Keyword",
+        "sql": "SELECT Customers.CustomerName, Orders.OrderID   FROM Customers   FULL OUTER JOIN Orders   ON Customers.CustomerID=Orders.CustomerID   ORDER BY Customers.CustomerName;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LAST_DAY() Function",
+        "sql": "SELECT LAST_DAY(\"2017-06-20\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LAST_DAY() Function",
+        "sql": "SELECT LAST_DAY(\"2017-02-10 09:34:00\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RIGHT() Function",
+        "sql": "SELECT RIGHT(\"SQL Tutorial is cool\", 4) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RIGHT() Function",
+        "sql": "SELECT RIGHT(CustomerName, 5) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Year() Function",
+        "sql": "SELECT Year(#05/17/2017#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Year() Function",
+        "sql": "SELECT Year(Date());"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Year() Function",
+        "sql": "SELECT Year(BirthDate) FROM Employees;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Format() Function",
+        "sql": "SELECT Format(Price, \"Currency\") AS FormattedPriceFROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FULL OUTER JOIN",
+        "sql": "SELECT Customers.CustomerName, Orders.OrderID FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID ORDER BY Customers.CustomerName;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ACOS() Function",
+        "sql": "SELECT ACOS(0.25);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ACOS() Function",
+        "sql": "SELECT ACOS(-0.8);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL POSITION() Function",
+        "sql": "SELECT POSITION(\"3\" IN \"W3Schools.com\") AS MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL POSITION() Function",
+        "sql": "SELECT POSITION(\"COM\" IN \"W3Schools.com\") AS MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL POSITION() Function",
+        "sql": "SELECT POSITION(\"a\" IN CustomerName)FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Syntax",
+        "sql": "SELECT * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access WeekdayName() Function",
+        "sql": "SELECT WeekdayName(3);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access WeekdayName() Function",
+        "sql": "SELECT WeekdayName(3, true);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access WeekdayName() Function",
+        "sql": "SELECT WeekdayName(3, true, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CHAR_LENGTH() Function",
+        "sql": "SELECT CHAR_LENGTH(\"SQL Tutorial\") AS LengthOfString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CHAR_LENGTH() Function",
+        "sql": "SELECT CHAR_LENGTH(CustomerName) AS LengthOfNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LPAD() Function",
+        "sql": "SELECT LPAD(\"SQL Tutorial\",    20, \"ABC\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LPAD() Function",
+        "sql": "SELECT LPAD(CustomerName, 30, \"ABC\") AS LeftPadCustomerNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ISNULL() Function",
+        "sql": "SELECT ISNULL(NULL);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ISNULL() Function",
+        "sql": "SELECT ISNULL(\"\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ISNULL() Function",
+        "sql": "SELECT ISNULL(350);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ISNULL() Function",
+        "sql": "SELECT ISNULL(\"Hello world!\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP TABLE, TRUNCATE TABLE",
+        "sql": "DROP TABLE Shippers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP TABLE, TRUNCATE TABLE",
+        "sql": "TRUNCATE TABLE Categories;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Asc() Function",
+        "sql": "SELECT Asc(CustomerName) AS NumCodeOfFirstCharFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONV() Function",
+        "sql": "SELECT CONV(15,    10, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONV() Function",
+        "sql": "SELECT CONV(1111, 2, 10);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONV() Function",
+        "sql": "SELECT CONV(88, 10, 16);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ASIN() Function",
+        "sql": "SELECT ASIN(0.25);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ASIN() Function",
+        "sql": "SELECT ASIN(-0.8);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL GROUP BY",
+        "sql": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL GROUP BY",
+        "sql": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country   ORDER BY COUNT(CustomerID) DESC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server UNICODE() Function",
+        "sql": "SELECT UNICODE('Atlanta');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server UNICODE() Function",
+        "sql": "SELECT UNICODE(CustomerName) AS UnicodeOfFirstCharFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURRENT_TIMESTAMP() Function",
+        "sql": "SELECT CURRENT_TIMESTAMP();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURRENT_TIMESTAMP() Function",
+        "sql": "SELECT CURRENT_TIMESTAMP() + 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Min() Function",
+        "sql": "SELECT    Min(Price) AS    SmallestPrice FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SPACE() Function",
+        "sql": "SELECT SPACE(10);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DEGREES() Function",
+        "sql": "SELECT DEGREES(1.5);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DEGREES() Function",
+        "sql": "SELECT DEGREES(PI()*2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL HOUR() Function",
+        "sql": "SELECT HOUR(\"2017-06-20 09:34:00\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL HOUR() Function",
+        "sql": "SELECT HOUR(\"838:59:59\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RTRIM() Function",
+        "sql": "SELECT RTRIM(\"SQL Tutorial     \") AS RightTrimmedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Count() Function",
+        "sql": "SELECT Count(ProductID) AS NumberOfProducts FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYOFMONTH() Function",
+        "sql": "SELECT DAYOFMONTH(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYOFMONTH() Function",
+        "sql": "SELECT DAYOFMONTH(\"2017-06-15 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYOFMONTH() Function",
+        "sql": "SELECT DAYOFMONTH(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN",
+        "sql": "SELECT * FROM ProductsWHERE Price BETWEEN 10 AND 20;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN",
+        "sql": "SELECT * FROM ProductsWHERE Price NOT BETWEEN 10 AND 20;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN",
+        "sql": "SELECT * FROM ProductsWHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella    di Giovanni'ORDER BY ProductName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE INDEX",
+        "sql": "CREATE INDEX idx_lastname ON Persons (LastName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE INDEX",
+        "sql": "CREATE INDEX idx_pname ON Persons (LastName, FirstName);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ABS() Function",
+        "sql": "SELECT ABS(-243.5);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CONCAT_WS() Function",
+        "sql": "SELECT    CONCAT_WS('.', 'www', 'W3Schools', 'com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CONCAT_WS() Function",
+        "sql": "SELECT    CONCAT_WS('-', 'SQL', ' is', ' fun!');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE UNIQUE INDEX",
+        "sql": "CREATE UNIQUE INDEX uidx_pid ON Persons (PersonID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CHARINDEX() Function",
+        "sql": "SELECT    CHARINDEX('t', 'Customer') AS MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CHARINDEX() Function",
+        "sql": "SELECT    CHARINDEX('OM', 'Customer') AS MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CHARINDEX() Function",
+        "sql": "SELECT CHARINDEX('mer', 'Customer', 3) AS MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO Statement",
+        "sql": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO Statement",
+        "sql": "INSERT INTO Customers (CustomerName, City, Country) VALUES ('Cardinal', 'Stavanger', 'Norway');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO Statement",
+        "sql": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway'), ('Greasy Burger', 'Per Olsen', 'Gateveien 15', 'Sandnes', '4306', 'Norway'), ('Tasty Tee', 'Finn Egan', 'Streetroad 19B', 'Liverpool', 'L1 0AA', 'UK');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AVG() Function",
+        "sql": "SELECT AVG(Price)FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AVG() Function",
+        "sql": "SELECT AVG(Price)FROM ProductsWHERE CategoryID = 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AVG() Function",
+        "sql": "SELECT AVG(Price) AS [average price]FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AVG() Function",
+        "sql": "SELECT * FROM ProductsWHERE price >    (SELECT AVG(price) FROM Products);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AVG() Function",
+        "sql": "SELECT AVG(Price) AS AveragePrice, CategoryIDFROM ProductsGROUP BY CategoryID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE PROCEDURE",
+        "sql": "CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE PROCEDURE",
+        "sql": "EXEC SelectAllCustomers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server COALESCE() Function",
+        "sql": "SELECT    COALESCE(NULL, NULL, NULL, 'W3Schools.com', NULL, 'Example.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server COALESCE() Function",
+        "sql": "SELECT    COALESCE(NULL, 1, 2, 'W3Schools.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SESSION_USER() Function",
+        "sql": "SELECT SESSION_USER();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOCALTIME() Function",
+        "sql": "SELECT    LOCALTIME();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOCALTIME() Function",
+        "sql": "SELECT    LOCALTIME() + 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server REVERSE() Function",
+        "sql": "SELECT REVERSE('SQL Tutorial');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server REVERSE() Function",
+        "sql": "SELECT REVERSE(CustomerName)FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Concat with &",
+        "sql": "SELECT Address & \", \" & PostalCode & \", \" & City AS AddressFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DESC",
+        "sql": "SELECT * FROM CustomersORDER BY CustomerName DESC;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Space() Function",
+        "sql": "SELECT    Space(5) AS SpaceString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AND",
+        "sql": "SELECT * FROM Customers  WHERE Country='Germany'  AND City='Berlin';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server PATINDEX() Function",
+        "sql": "SELECT PATINDEX('%schools%', 'W3Schools.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server PATINDEX() Function",
+        "sql": "SELECT    PATINDEX('%s%com%', 'W3Schools.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server PATINDEX() Function",
+        "sql": "SELECT PATINDEX('%[ol]%', 'W3Schools.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server PATINDEX() Function",
+        "sql": "SELECT PATINDEX('%[z]%', 'W3Schools.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SUBSTRING() Function",
+        "sql": "SELECT SUBSTRING('SQL Tutorial', 1, 3) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SUBSTRING() Function",
+        "sql": "SELECT SUBSTRING(CustomerName, 1, 5) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SUBSTRING() Function",
+        "sql": "SELECT SUBSTRING('SQL Tutorial', 1, 100) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO SELECT Statement",
+        "sql": "INSERT INTO table2 SELECT * FROM table1WHERE condition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO SELECT Statement",
+        "sql": "INSERT INTO table2 (column1, column2, column3, ...) SELECT column1, column2, column3, ... FROM table1 WHERE condition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO SELECT Statement",
+        "sql": "INSERT INTO Customers (CustomerName,    City, Country)  SELECT SupplierName, City, Country FROM Suppliers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO SELECT Statement",
+        "sql": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode,    Country)SELECT SupplierName, ContactName, Address, City, PostalCode,    Country FROM Suppliers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO SELECT Statement",
+        "sql": "INSERT INTO Customers (CustomerName,    City, Country)  SELECT SupplierName, City, Country FROM SuppliersWHERE Country='Germany';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server REPLICATE() Function",
+        "sql": "SELECT REPLICATE('SQL Tutorial', 5);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server REPLICATE() Function",
+        "sql": "SELECT REPLICATE(CustomerName, 2)FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SUM() Function",
+        "sql": "SELECT SUM(Quantity)FROM OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SUM() Function",
+        "sql": "SELECT SUM(Quantity)FROM OrderDetailsWHERE ProductId = 11;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SUM() Function",
+        "sql": "SELECT SUM(Quantity) AS totalFROM OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SUM() Function",
+        "sql": "SELECT OrderID, SUM(Quantity) AS [Total Quantity]FROM OrderDetails   GROUP BY OrderID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SUM() Function",
+        "sql": "SELECT SUM(Quantity * 10)FROM OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SUM() Function",
+        "sql": "SELECT SUM(Price * Quantity) FROM OrderDetails LEFT JOIN Products ON OrderDetails.ProductID = Products.ProductID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server NULLIF() Function",
+        "sql": "SELECT NULLIF(25, 25);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server NULLIF() Function",
+        "sql": "SELECT NULLIF('Hello', 'Hello');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server NULLIF() Function",
+        "sql": "SELECT NULLIF('Hello', 'world');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server NULLIF() Function",
+        "sql": "SELECT NULLIF('2017-08-25', '2017-08-25');"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBDATE() Function",
+        "sql": "SELECT SUBDATE(\"2017-06-15\", INTERVAL 10 DAY);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBDATE() Function",
+        "sql": "SELECT SUBDATE(\"2017-06-15 09:34:21\", INTERVAL 15 MINUTE);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBDATE() Function",
+        "sql": "SELECT SUBDATE(\"2017-06-15 09:34:21\", INTERVAL 3 HOUR);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBDATE() Function",
+        "sql": "SELECT SUBDATE(\"2017-06-15\", INTERVAL -2 MONTH);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAY() Function",
+        "sql": "SELECT DAY(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAY() Function",
+        "sql": "SELECT DAY(\"2017-06-15 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAY() Function",
+        "sql": "SELECT DAY(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL PERIOD_DIFF() Function",
+        "sql": "SELECT PERIOD_DIFF(201710, 201703);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL PERIOD_DIFF() Function",
+        "sql": "SELECT PERIOD_DIFF(201703, 201803);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL PERIOD_DIFF() Function",
+        "sql": "SELECT PERIOD_DIFF(1703, 1612);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Left() Function",
+        "sql": "SELECT Left(\"SQL Tutorial\", 3) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Left() Function",
+        "sql": "SELECT Left(CustomerName, 5) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CONCAT() Function",
+        "sql": "SELECT    CONCAT('W3Schools', '.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CONCAT() Function",
+        "sql": "SELECT    CONCAT('SQL', ' is', ' fun!');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CONCAT() Function",
+        "sql": "SELECT    CONCAT('SQL', ' ', 'is', ' ', 'fun!');"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURRENT_USER() Function",
+        "sql": "SELECT CURRENT_USER();"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server NCHAR() Function",
+        "sql": "SELECT NCHAR(65) AS NumberCodeToUnicode;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Len() Function",
+        "sql": "SELECT Len(\"SQL Tutorial\") AS LengthOfString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Len() Function",
+        "sql": "SELECT Len(CustomerName) AS LengthOfStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE CustomersDROP COLUMN ContactName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT UC_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE Persons DROP INDEX UC_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT PK_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE Persons DROP PRIMARY KEY;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE Orders DROP CONSTRAINT FK_PersonOrder;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE Orders DROP FOREIGN KEY FK_PersonOrder;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT CHK_PersonAge;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE Persons DROP CHECK CHK_PersonAge;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE Persons ALTER COLUMN City DROP DEFAULT;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE Persons ALTER City DROP DEFAULT;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "DROP INDEX index_name ON table_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "DROP INDEX table_name.index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "DROP INDEX index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "ALTER TABLE table_nameDROP INDEX index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "DROP DATABASE testDB;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "DROP TABLE Shippers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP",
+        "sql": "DROP VIEW [Brazil Customers];"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Self Join",
+        "sql": "SELECT column_name(s) FROM table1 T1, table1 T2   WHERE condition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Self Join",
+        "sql": "SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2,    A.CityFROM Customers A, Customers BWHERE A.CustomerID <> B.CustomerID   AND A.City = B.City ORDER BY A.City;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SYSDATETIME() Function",
+        "sql": "SELECT SYSDATETIME() AS SysDateTime;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Constraints",
+        "sql": "CREATE TABLE table_name (     column1 datatype constraint,     column2 datatype constraint,     column3 datatype constraint,     .... );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LOG() Function",
+        "sql": "SELECT LOG(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LOG() Function",
+        "sql": "SELECT LOG(2, 4);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Rnd Function",
+        "sql": "SELECT Int((10 - 1 + 1) * Rnd + 1) AS RandNumBetween1and10,Int((499 - 100    + 1) * Rnd + 100) AS RandNumBetween100and499;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server PI() Function",
+        "sql": "SELECT PI();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SIGN() Function",
+        "sql": "SELECT SIGN(255.5);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SIGN() Function",
+        "sql": "SELECT SIGN(-12);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Time() Function",
+        "sql": "SELECT CustomerName,    Time() AS CurrentTimeFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Fix() Function",
+        "sql": "SELECT Fix(756.43) AS FixNum;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Fix() Function",
+        "sql": "SELECT Fix(Price) AS FixNum FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LN() Function",
+        "sql": "SELECT LN(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LN() Function",
+        "sql": "SELECT LN(1);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ADD",
+        "sql": "ALTER TABLE CustomersADD Email varchar(255);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server IIF() Function",
+        "sql": "SELECT    IIF(500<1000, 'YES', 'NO');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server IIF() Function",
+        "sql": "SELECT IIF(500<1000, 5, 10);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server IIF() Function",
+        "sql": "SELECT IIF('hello' = 'bye', 'YES', 'NO');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server IIF() Function",
+        "sql": "SELECT OrderID, Quantity, IIF(Quantity>10,    'MORE', 'LESS')FROM    OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access CurrentUser() Function",
+        "sql": "SELECT CurrentUser();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SIN() Function",
+        "sql": "SELECT SIN(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SIN() Function",
+        "sql": "SELECT SIN(-1);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CAST() Function",
+        "sql": "SELECT CAST(25.65 AS int);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CAST() Function",
+        "sql": "SELECT CAST(25.65 AS varchar);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CAST() Function",
+        "sql": "SELECT CAST('2017-08-25' AS datetime);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL NULLIF() Function",
+        "sql": "SELECT NULLIF(25, 25);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL NULLIF() Function",
+        "sql": "SELECT NULLIF(25, \"Hello\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL NULLIF() Function",
+        "sql": "SELECT NULLIF(\"Hello\", \"world\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL NULLIF() Function",
+        "sql": "SELECT NULLIF(\"2017-08-25\", \"2017-08-25\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NULL Values - IS NULL and IS NOT NULL",
+        "sql": "SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address    IS NULL;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NULL Values - IS NULL and IS NOT NULL",
+        "sql": "SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address    IS NOT NULL;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Exp() Function",
+        "sql": "SELECT Exp(5) AS ExpNum;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server TAN() Function",
+        "sql": "SELECT TAN(1.75);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server TAN() Function",
+        "sql": "SELECT TAN(-3);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT DISTINCT",
+        "sql": "SELECT DISTINCT Country FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOWER() Function",
+        "sql": "SELECT LOWER(\"SQL Tutorial is FUN!\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOWER() Function",
+        "sql": "SELECT LOWER(CustomerName) AS LowercaseCustomerNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DIFFERENCE() Function",
+        "sql": "SELECT DIFFERENCE('Juice', 'Jucy');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DIFFERENCE() Function",
+        "sql": "SELECT DIFFERENCE('Juice', 'Banana');"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL AVG() Function",
+        "sql": "SELECT AVG(Price) AS    AveragePrice FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL AVG() Function",
+        "sql": "SELECT * FROM ProductsWHERE Price > (SELECT AVG(Price) FROM Products);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ROUND() Function",
+        "sql": "SELECT ROUND(235.415, 2) AS RoundValue;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ROUND() Function",
+        "sql": "SELECT ROUND(235.415, 2, 1) AS RoundValue;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ROUND() Function",
+        "sql": "SELECT ROUND(235.415, -1) AS RoundValue;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CASE Expression",
+        "sql": "CASE    WHEN condition1 THEN result1       WHEN condition2 THEN result2    WHEN    conditionN THEN resultN    ELSE resultEND;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CASE Expression",
+        "sql": "SELECT OrderID, Quantity,CASE    WHEN Quantity > 30    THEN 'The quantity is greater than 30'    WHEN Quantity = 30 THEN 'The    quantity is 30'    ELSE 'The quantity is under 30'END AS QuantityTextFROM OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CASE Expression",
+        "sql": "SELECT CustomerName, City, CountryFROM CustomersORDER BY(CASE       WHEN City IS NULL THEN Country    ELSE CityEND);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access IsNumeric() Function",
+        "sql": "SELECT IsNumeric(1030);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access IsNumeric() Function",
+        "sql": "SELECT IsNumeric(\"Hello\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access IsNumeric() Function",
+        "sql": "SELECT IsNumeric(\"1030\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DAY() Function",
+        "sql": "SELECT DAY('2017/08/25') AS DayOfMonth;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DAY() Function",
+        "sql": "SELECT DAY('2017/08/13 09:08') AS DayOfMonth;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SET",
+        "sql": "UPDATE Customers  SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'  WHERE CustomerID = 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SET",
+        "sql": "UPDATE Customers SET ContactName='Juan' WHERE Country='Mexico';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server MAX() Function",
+        "sql": "SELECT MAX(Price) AS LargestPrice FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL FULL OUTER JOIN",
+        "sql": "SELECT Customers.CustomerName, Orders.OrderID FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID ORDER BY Customers.CustomerName;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL UCASE() Function",
+        "sql": "SELECT UCASE(\"SQL Tutorial is FUN!\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL UCASE() Function",
+        "sql": "SELECT UCASE(CustomerName) AS UppercaseCustomerNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP DATABASE",
+        "sql": "DROP DATABASE testDB;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DateDiff() Function",
+        "sql": "SELECT DateDiff(\"yyyy\", #13/01/1998#, #09/05/2017#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DateDiff() Function",
+        "sql": "SELECT DateDiff(\"m\", #13/01/1998#, #09/05/2017#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DateDiff() Function",
+        "sql": "SELECT DateDiff(\"d\", #13/01/1998#, Date());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server COUNT() Function",
+        "sql": "SELECT COUNT(ProductID) AS NumberOfProducts FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATENAME() Function",
+        "sql": "SELECT DATENAME(year, '2017/08/25') AS DatePartString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATENAME() Function",
+        "sql": "SELECT DATENAME(yy, '2017/08/25') AS DatePartString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATENAME() Function",
+        "sql": "SELECT DATENAME(month, '2017/08/25') AS DatePartString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATENAME() Function",
+        "sql": "SELECT DATENAME(hour, '2017/08/25 08:36') AS DatePartString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATENAME() Function",
+        "sql": "SELECT DATENAME(minute, '2017/08/25 08:36') AS DatePartString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access TimeValue() Function",
+        "sql": "SELECT TimeValue(\"17:15:38\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access TimeValue() Function",
+        "sql": "SELECT TimeValue(\"5:15:38 PM\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATABASE() Function",
+        "sql": "SELECT DATABASE();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ASIN() Function",
+        "sql": "SELECT ASIN(0.25);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ASIN() Function",
+        "sql": "SELECT ASIN(-0.8);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL WEEKDAY() Function",
+        "sql": "SELECT WEEKDAY(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL WEEKDAY() Function",
+        "sql": "SELECT WEEKDAY(\"2017-01-01\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL WEEKDAY() Function",
+        "sql": "SELECT WEEKDAY(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server RTRIM() Function",
+        "sql": "SELECT RTRIM('SQL Tutorial     ') AS RightTrimmedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LOWER() Function",
+        "sql": "SELECT LOWER('SQL Tutorial is FUN!');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LOWER() Function",
+        "sql": "SELECT LOWER(CustomerName) AS LowercaseCustomerNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL INSERT() Function",
+        "sql": "SELECT INSERT(\"W3Schools.com\", 1, 9, \"Example\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL INSERT() Function",
+        "sql": "SELECT INSERT(\"W3Schools.com\", 11, 3, \"no\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN Operator",
+        "sql": "SELECT * FROM ProductsWHERE Price BETWEEN 10 AND 20;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN Operator",
+        "sql": "SELECT * FROM ProductsWHERE Price NOT BETWEEN 10 AND 20;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN Operator",
+        "sql": "SELECT * FROM ProductsWHERE Price BETWEEN 10 AND 20AND CategoryID IN (1,2,3);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN Operator",
+        "sql": "SELECT * FROM ProductsWHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella    di Giovanni'ORDER BY ProductName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN Operator",
+        "sql": "SELECT * FROM ProductsWHERE ProductName BETWEEN \"Carnarvon Tigers\" AND    \"Chef Anton's Cajun Seasoning\"ORDER BY ProductName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN Operator",
+        "sql": "SELECT * FROM ProductsWHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella    di Giovanni'ORDER BY ProductName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN Operator",
+        "sql": "SELECT * FROM OrdersWHERE OrderDate BETWEEN #07/01/1996# AND #07/31/1996#;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BETWEEN Operator",
+        "sql": "SELECT * FROM OrdersWHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Avg() Function",
+        "sql": "SELECT Avg(Price) AS    AveragePrice FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Avg() Function",
+        "sql": "SELECT * FROM ProductsWHERE Price > (SELECT Avg(Price) FROM Products);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBTIME() Function",
+        "sql": "SELECT SUBTIME(\"2017-06-15 10:24:21.000004\", \"5.000001\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBTIME() Function",
+        "sql": "SELECT SUBTIME(\"2017-06-15 10:24:21.000004\", \"3:2:5.000001\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBTIME() Function",
+        "sql": "SELECT SUBTIME(\"10:24:21\", \"5\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBTIME() Function",
+        "sql": "SELECT SUBTIME(\"10:24:21\", \"300\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBTIME() Function",
+        "sql": "SELECT SUBTIME(\"10:24:21\", \"-3:2:5\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOG10() Function",
+        "sql": "SELECT LOG10(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOG10() Function",
+        "sql": "SELECT LOG10(4.5);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO",
+        "sql": "SELECT * INTO CustomersBackup2017 FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO",
+        "sql": "SELECT * INTO CustomersBackup2017 IN 'Backup.mdb' FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO",
+        "sql": "SELECT CustomerName, ContactName INTO CustomersBackup2017 FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO",
+        "sql": "SELECT * INTO CustomersGermany FROM Customers WHERE Country = 'Germany';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO",
+        "sql": "SELECT Customers.CustomerName, Orders.OrderIDINTO CustomersOrderBackup2017 FROM Customers  LEFT JOIN Orders  ON Customers.CustomerID = Orders.CustomerID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CHAR() Function",
+        "sql": "SELECT CHAR(65) AS CodeToCharacter;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INNER JOIN",
+        "sql": "SELECT Orders.OrderID, Customers.CustomerNameFROM OrdersINNER JOIN    Customers ON Orders.CustomerID = Customers.CustomerID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INNER JOIN",
+        "sql": "SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperNameFROM    ((OrdersINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)   INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server QUOTENAME() Function",
+        "sql": "SELECT QUOTENAME('abcdef');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server QUOTENAME() Function",
+        "sql": "SELECT QUOTENAME('abcdef', '()');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT NULL",
+        "sql": "CREATE TABLE Persons (    ID int NOT NULL,       LastName varchar(255) NOT NULL,    FirstName varchar(255)    NOT NULL,    Age int);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT NULL",
+        "sql": "ALTER TABLE Persons MODIFY Age int NOT NULL;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MAX() Function",
+        "sql": "SELECT MAX(Price) AS LargestPrice FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT TOP 3 * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT * FROM CustomersLIMIT 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT * FROM CustomersWHERE ROWNUM  <= 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYNAME() Function",
+        "sql": "SELECT DAYNAME(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYNAME() Function",
+        "sql": "SELECT DAYNAME(\"2017-06-15 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYNAME() Function",
+        "sql": "SELECT DAYNAME(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE() Function",
+        "sql": "SELECT DATE(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE() Function",
+        "sql": "SELECT DATE(\"2017-06-15 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE() Function",
+        "sql": "SELECT DATE(\"The    date is 2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE() Function",
+        "sql": "SELECT DATE(OrderDate) FROM Orders;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SYSDATE() Function",
+        "sql": "SELECT SYSDATE();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SYSDATE() Function",
+        "sql": "SELECT SYSDATE() + 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL JOIN",
+        "sql": "SELECT Orders.OrderID, Customers.CustomerNameFROM OrdersINNER JOIN    Customers ON Orders.CustomerID = Customers.CustomerID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL JOIN",
+        "sql": "SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperNameFROM    ((OrdersINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)   INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL JOIN",
+        "sql": "SELECT Customers.CustomerName, Orders.OrderID  FROM Customers  LEFT JOIN Orders  ON Customers.CustomerID = Orders.CustomerID  ORDER BY Customers.CustomerName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL JOIN",
+        "sql": "SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID  ORDER BY Orders.OrderID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL JOIN",
+        "sql": "SELECT Customers.CustomerName, Orders.OrderID FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID ORDER BY Customers.CustomerName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ORDER BY",
+        "sql": "SELECT * FROM CustomersORDER BY CustomerName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ORDER BY",
+        "sql": "SELECT * FROM CustomersORDER BY CustomerName ASC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ORDER BY",
+        "sql": "SELECT * FROM CustomersORDER BY CustomerName DESC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALL",
+        "sql": "SELECT ProductNameFROM ProductsWHERE ProductID = ALL (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Int() Function",
+        "sql": "SELECT Int(756.43) AS IntNum;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Int() Function",
+        "sql": "SELECT Int(Price) AS IntNum FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     PRIMARY KEY (ID) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL PRIMARY KEY,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     CONSTRAINT PK_Person PRIMARY KEY (ID,LastName) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY",
+        "sql": "ALTER TABLE Persons ADD PRIMARY KEY (ID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY",
+        "sql": "ALTER TABLE Persons ADD CONSTRAINT PK_Person PRIMARY KEY (ID,LastName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY",
+        "sql": "ALTER TABLE Persons DROP PRIMARY KEY;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL PRIMARY KEY",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT PK_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL IS NULL",
+        "sql": "SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address    IS NULL;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access InstrRev() Function",
+        "sql": "SELECT InstrRev(\"Customer\", \"t\") AS    MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Abs() Function",
+        "sql": "SELECT Abs(-243.5) AS AbsNum;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT Operator",
+        "sql": "SELECT * FROM Customers  WHERE NOT Country = 'Spain';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT Operator",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName NOT LIKE 'A%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT Operator",
+        "sql": "SELECT * FROM Customers  WHERE CustomerID NOT BETWEEN 10 AND 60;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT Operator",
+        "sql": "SELECT * FROM Customers  WHERE City NOT IN ('Paris', 'London');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT Operator",
+        "sql": "SELECT * FROM Customers  WHERE NOT CustomerID > 50;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT Operator",
+        "sql": "SELECT * FROM Customers  WHERE NOT CustomerId < 50;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Minute() Function",
+        "sql": "SELECT    Minute(#14:48:23#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Minute() Function",
+        "sql": "SELECT    Minute(Now());"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Minute() Function",
+        "sql": "SELECT    Minute(#24/10/2016 11:18:34 PM#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_SUB() Function",
+        "sql": "SELECT DATE_SUB(\"2017-06-15\", INTERVAL 10 DAY);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_SUB() Function",
+        "sql": "SELECT DATE_SUB(\"2017-06-15 09:34:21\", INTERVAL 15 MINUTE);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_SUB() Function",
+        "sql": "SELECT DATE_SUB(\"2017-06-15 09:34:21\", INTERVAL 3 HOUR);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_SUB() Function",
+        "sql": "SELECT DATE_SUB(\"2017-06-15\", INTERVAL -2 MONTH);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL REPEAT() Function",
+        "sql": "SELECT REPEAT(\"SQL Tutorial\", 3);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL REPEAT() Function",
+        "sql": "SELECT REPEAT(CustomerName,    2)FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL REPEAT() Function",
+        "sql": "SELECT REPEAT(\"SQL Tutorial\", 0);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RADIANS() Function",
+        "sql": "SELECT RADIANS(180);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RADIANS() Function",
+        "sql": "SELECT RADIANS(-45);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL COALESCE() Function",
+        "sql": "SELECT    COALESCE(NULL, NULL, NULL, 'W3Schools.com', NULL, 'Example.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL COALESCE() Function",
+        "sql": "SELECT    COALESCE(NULL, 1, 2, 'W3Schools.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL VALUES",
+        "sql": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL VALUES",
+        "sql": "INSERT INTO Customers (CustomerName, City, Country) VALUES ('Cardinal', 'Stavanger', 'Norway');"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBSTR() Function",
+        "sql": "SELECT SUBSTR(\"SQL Tutorial\", 5, 3) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBSTR() Function",
+        "sql": "SELECT SUBSTR(CustomerName,    2, 5) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBSTR() Function",
+        "sql": "SELECT SUBSTR(\"SQL Tutorial\", -5, 5) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT TOP 3 * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT * FROM CustomersLIMIT 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT * FROM CustomersFETCH FIRST 3 ROWS ONLY;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT TOP 50 PERCENT * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT * FROM CustomersFETCH FIRST 50 PERCENT ROWS ONLY;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT TOP 3 * FROM CustomersWHERE Country='Germany';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT * FROM CustomersWHERE Country='Germany'LIMIT 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT * FROM CustomersWHERE Country='Germany'FETCH FIRST 3 ROWS ONLY;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT TOP 3 * FROM CustomersORDER BY CustomerName DESC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT * FROM CustomersORDER BY CustomerName DESCLIMIT 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, FETCH FIRST ROWS ONLY, ROWNUM",
+        "sql": "SELECT * FROM CustomersORDER BY CustomerName DESCFETCH FIRST 3 ROWS ONLY;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNION",
+        "sql": "SELECT City FROM CustomersUNIONSELECT City FROM SuppliersORDER BY City;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DateAdd() Function",
+        "sql": "SELECT DateAdd(\"yyyy\", 2, #22/11/2017#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DateAdd() Function",
+        "sql": "SELECT DateAdd(\"yyyy\", 1, Date());"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DateAdd() Function",
+        "sql": "SELECT LastName, DateAdd(\"m\", 6, BirthDate) FROM Employees;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DATABASE",
+        "sql": "CREATE DATABASE testDB;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DATABASE",
+        "sql": "DROP DATABASE testDB;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE 'a%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers  WHERE city LIKE 'L_nd__';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers  WHERE city LIKE '%L%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE 'La%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE 'a%' OR CustomerName LIKE 'b%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE '%a';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers   WHERE CustomerName LIKE 'b%s';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers   WHERE CustomerName LIKE '%or%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers   WHERE CustomerName LIKE 'a__%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers   WHERE CustomerName LIKE '_r%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL LIKE Operator",
+        "sql": "SELECT * FROM Customers   WHERE Country    LIKE 'Spain';"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MID() Function",
+        "sql": "SELECT MID(\"SQL Tutorial\", 5, 3) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MID() Function",
+        "sql": "SELECT MID(CustomerName,    2, 5) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MID() Function",
+        "sql": "SELECT MID(\"SQL Tutorial\", -5, 5) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONCAT_WS() Function",
+        "sql": "SELECT CONCAT_WS(\"-\", \"SQL\", \"Tutorial\", \"is\", \"fun!\") AS ConcatenatedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONCAT_WS() Function",
+        "sql": "SELECT CONCAT_WS(\" \", Address, PostalCode, City) AS AddressFROM    Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CURRENT_TIMESTAMP Function",
+        "sql": "SELECT    CURRENT_TIMESTAMP;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISNUMERIC() Function",
+        "sql": "SELECT ISNUMERIC(4567);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISNUMERIC() Function",
+        "sql": "SELECT ISNUMERIC('4567');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISNUMERIC() Function",
+        "sql": "SELECT ISNUMERIC('Hello world!');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISNUMERIC() Function",
+        "sql": "SELECT ISNUMERIC(20*3);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISNUMERIC() Function",
+        "sql": "SELECT ISNUMERIC('2017-08-25');"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONVERT() Function",
+        "sql": "SELECT    CONVERT(\"2017-08-29\", DATE);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONVERT() Function",
+        "sql": "SELECT CONVERT(150, CHAR);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONVERT() Function",
+        "sql": "SELECT CONVERT(\"14:06:10\", TIME);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONVERT() Function",
+        "sql": "SELECT    CONVERT(\"W3Schools.com\" USING latin1);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Split() Function",
+        "sql": "SELECT Split(\"SQL Tutorial is fun!\") AS SplitString;Result: {\"SQL\",    \"Tutorial\", \"is\", \"fun!\"}   SELECT Split (\"red:green:yellow:blue\", \":\", 2) AS SplitString;Result: {\"red\", \"green\"}"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL WHERE Clause",
+        "sql": "SELECT * FROM Customers WHERE Country='Mexico';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL WHERE Clause",
+        "sql": "SELECT * FROM Customers  WHERE CustomerID=1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL WHERE Clause",
+        "sql": "SELECT * FROM Customers  WHERE CustomerID > 80;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYOFWEEK() Function",
+        "sql": "SELECT DAYOFWEEK(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYOFWEEK() Function",
+        "sql": "SELECT DAYOFWEEK(\"2017-06-15 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DAYOFWEEK() Function",
+        "sql": "SELECT DAYOFWEEK(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server Concat with +",
+        "sql": "SELECT    'W3Schools' + '.com';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server Concat with +",
+        "sql": "SELECT    'SQL' + ' is' + ' fun!';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server Concat with +",
+        "sql": "SELECT    'SQL' + ' ' + 'is' + ' ' + 'fun!';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEADD() Function",
+        "sql": "SELECT DATEADD(year, 1, '2017/08/25') AS DateAdd;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEADD() Function",
+        "sql": "SELECT DATEADD(month, 2, '2017/08/25') AS DateAdd;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEADD() Function",
+        "sql": "SELECT DATEADD(month, -2, '2017/08/25') AS DateAdd;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEADD() Function",
+        "sql": "SELECT LastName,    BirthDate, DATEADD(year, 18, BirthDate) AS DateAdd FROM Employees;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "txtUserId = getRequestString(\"UserId\");txtSQL = \"SELECT * FROM Users WHERE UserId = \" + txtUserId;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "SELECT * FROM Users WHERE UserId = 105 OR 1=1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "SELECT UserId, Name, Password FROM Users WHERE UserId = 105 or 1=1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "uName = getRequestString(\"username\");uPass = getRequestString(\"userpassword\"); sql = 'SELECT * FROM Users WHERE Name =\"' + uName + '\" AND Pass =\"' + uPass +   '\"'"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "SELECT * FROM Users WHERE Name =\"John Doe\" AND Pass =\"myPass\""
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "SELECT * FROM Users WHERE Name =\"\" or \"\"=\"\" AND Pass =\"\" or \"\"=\"\""
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "SELECT * FROM Users; DROP TABLE Suppliers"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "txtUserId = getRequestString(\"UserId\");txtSQL = \"SELECT * FROM Users WHERE UserId = \" + txtUserId;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "SELECT * FROM Users WHERE  UserId = 105; DROP TABLE Suppliers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "txtUserId = getRequestString(\"UserId\");txtSQL = \"SELECT * FROM Users WHERE UserId = @0\";db.Execute(txtSQL,txtUserId);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "txtNam = getRequestString(\"CustomerName\");txtAdd = getRequestString(\"Address\");txtCit = getRequestString(\"City\");  txtSQL = \"INSERT INTO Customers (CustomerName,Address,City) Values(@0,@1,@2)\";db.Execute(txtSQL,txtNam,txtAdd,txtCit);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "txtUserId = getRequestString(\"UserId\");  sql = \"SELECT * FROM Customers WHERE CustomerId = @0\";command = new SqlCommand(sql);command.Parameters.AddWithValue(\"@0\",txtUserId);  command.ExecuteReader();"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "txtNam = getRequestString(\"CustomerName\");txtAdd = getRequestString(\"Address\");txtCit = getRequestString(\"City\");  txtSQL = \"INSERT INTO Customers (CustomerName,Address,City) Values(@0,@1,@2)\";command = new SqlCommand(txtSQL);  command.Parameters.AddWithValue(\"@0\",txtNam);  command.Parameters.AddWithValue(\"@1\",txtAdd);  command.Parameters.AddWithValue(\"@2\",txtCit);command.ExecuteNonQuery();"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Injection",
+        "sql": "$stmt = $dbh->prepare(\"INSERT INTO Customers (CustomerName,Address,City)   VALUES (:nam, :add, :cit)\");$stmt->bindParam(':nam', $txtNam);  $stmt->bindParam(':add', $txtAdd);$stmt->bindParam(':cit', $txtCit);  $stmt->execute();"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL RIGHT JOIN Keyword",
+        "sql": "SELECT column_name(s) FROM table1 RIGHT JOIN table2 ON table1.column_name = table2.column_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL RIGHT JOIN Keyword",
+        "sql": "SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID  ORDER BY Orders.OrderID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP INDEX",
+        "sql": "DROP INDEX index_name ON table_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP INDEX",
+        "sql": "DROP INDEX table_name.index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP INDEX",
+        "sql": "DROP INDEX index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP INDEX",
+        "sql": "ALTER TABLE table_nameDROP INDEX index_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TRIM() Function",
+        "sql": "SELECT TRIM('    SQL Tutorial    ') AS TrimmedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL UPPER() Function",
+        "sql": "SELECT UPPER(\"SQL Tutorial is FUN!\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL UPPER() Function",
+        "sql": "SELECT UPPER(CustomerName) AS UppercaseCustomerNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATALENGTH() Function",
+        "sql": "SELECT    DATALENGTH('W3Schools.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATALENGTH() Function",
+        "sql": "SELECT    DATALENGTH('   W3Schools.com   ');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATALENGTH() Function",
+        "sql": "SELECT    DATALENGTH('2017-08');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DELETE Statement",
+        "sql": "DELETE FROM Customers  WHERE CustomerName='Alfreds Futterkiste';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DELETE Statement",
+        "sql": "DELETE FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DELETE Statement",
+        "sql": "DROP TABLE Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LTRIM() Function",
+        "sql": "SELECT LTRIM(\"     SQL Tutorial\") AS LeftTrimmedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CASE Function",
+        "sql": "SELECT OrderID, Quantity,CASE    WHEN Quantity > 30    THEN \"The quantity is greater than 30\"    WHEN Quantity =    30 THEN \"The quantity is 30\"    ELSE \"The quantity is    under 30\"ENDFROM OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CASE Function",
+        "sql": "SELECT CustomerName, City, CountryFROM CustomersORDER BY(CASE       WHEN City IS NULL THEN Country    ELSE CityEND);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ATAN2() Function",
+        "sql": "SELECT ATAN2(0.50, 1);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ATAN2() Function",
+        "sql": "SELECT ATAN2(-0.8, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER",
+        "sql": "ALTER TABLE CustomersADD Email varchar(255);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER",
+        "sql": "ALTER TABLE CustomersDROP COLUMN Email;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER",
+        "sql": "ALTER TABLE EmployeesALTER COLUMN BirthDate    year;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LEFT() Function",
+        "sql": "SELECT LEFT(\"SQL Tutorial\", 3) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LEFT() Function",
+        "sql": "SELECT LEFT(CustomerName, 5) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP DATABASE Statement",
+        "sql": "DROP DATABASE databasename;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP DATABASE Statement",
+        "sql": "DROP DATABASE testDB;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL COLUMN",
+        "sql": "ALTER TABLE EmployeesALTER COLUMN BirthDate    year;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL COLUMN",
+        "sql": "ALTER TABLE CustomersDROP COLUMN ContactName;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Now() Function",
+        "sql": "SELECT CustomerName, Now() AS CurrentDateTimeFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT",
+        "sql": "SELECT * FROM Customers  WHERE    NOT Country='Germany';"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MOD() Function",
+        "sql": "SELECT MOD(18, 4);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MOD() Function",
+        "sql": "SELECT 18 MOD 4;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MOD() Function",
+        "sql": "SELECT 18 % 4;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUM() Function",
+        "sql": "SELECT SUM(Quantity) AS TotalItemsOrdered FROM OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Wildcard Characters",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE 'a%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Wildcard Characters",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE '%es';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Wildcard Characters",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE '%mer%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Wildcard Characters",
+        "sql": "SELECT * FROM Customers  WHERE City LIKE '_ondon';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Wildcard Characters",
+        "sql": "SELECT * FROM Customers  WHERE City LIKE 'L___on';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Wildcard Characters",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE '[bsp]%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Wildcard Characters",
+        "sql": "SELECT * FROM Customers  WHERE CustomerName LIKE '[a-f]%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Wildcard Characters",
+        "sql": "SELECT * FROM Customers   WHERE CustomerName LIKE 'a__%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Wildcard Characters",
+        "sql": "SELECT * FROM Customers   WHERE CustomerName LIKE '_r%';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Wildcard Characters",
+        "sql": "SELECT * FROM Customers   WHERE Country    LIKE 'Spain';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK Constraint",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     CHECK (Age>=18) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK Constraint",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int CHECK (Age>=18) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK Constraint",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     City varchar(255),     CONSTRAINT CHK_Person CHECK (Age>=18 AND City='Sandnes') );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK Constraint",
+        "sql": "ALTER TABLE Persons ADD CHECK (Age>=18);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK Constraint",
+        "sql": "ALTER TABLE Persons ADD CONSTRAINT CHK_PersonAge CHECK (Age>=18 AND City='Sandnes');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK Constraint",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT CHK_PersonAge;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK Constraint",
+        "sql": "ALTER TABLE Persons DROP CHECK CHK_PersonAge;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Format() Function",
+        "sql": "SELECT Format(BirthDate, \"Long Date\") AS FormattedBirthDateFROM Employees;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL HAVING",
+        "sql": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country   HAVING COUNT(CustomerID) > 5;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL HAVING",
+        "sql": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY CountryHAVING COUNT(CustomerID)    > 5   ORDER BY COUNT(CustomerID) DESC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT NULL Constraint",
+        "sql": "CREATE TABLE Persons (    ID int NOT NULL,       LastName varchar(255) NOT NULL,    FirstName varchar(255)    NOT NULL,    Age int);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT NULL Constraint",
+        "sql": "ALTER TABLE Persons ALTER COLUMN Age int NOT NULL;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT NULL Constraint",
+        "sql": "ALTER TABLE Persons MODIFY COLUMN Age int NOT NULL;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL NOT NULL Constraint",
+        "sql": "ALTER TABLE Persons   MODIFY Age int NOT NULL;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_FORMAT() Function",
+        "sql": "SELECT DATE_FORMAT(\"2017-06-15\", \"%Y\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_FORMAT() Function",
+        "sql": "SELECT DATE_FORMAT(\"2017-06-15\", \"%M %d %Y\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_FORMAT() Function",
+        "sql": "SELECT DATE_FORMAT(\"2017-06-15\", \"%W %M    %e %Y\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATE_FORMAT() Function",
+        "sql": "SELECT DATE_FORMAT(BirthDate, \"%W %M %e %Y\") FROM Employees;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO Statement",
+        "sql": "SELECT * INTO newtable [IN externaldb] FROM oldtableWHERE condition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO Statement",
+        "sql": "SELECT column1, column2, column3, ... INTO newtable [IN externaldb]  FROM oldtableWHERE condition;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO Statement",
+        "sql": "SELECT * INTO CustomersBackup2017 FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO Statement",
+        "sql": "SELECT * INTO CustomersBackup2017 IN 'Backup.mdb' FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO Statement",
+        "sql": "SELECT CustomerName, ContactName INTO CustomersBackup2017 FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO Statement",
+        "sql": "SELECT * INTO CustomersGermany FROM Customers WHERE Country = 'Germany';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO Statement",
+        "sql": "SELECT Customers.CustomerName, Orders.OrderIDINTO CustomersOrderBackup2017 FROM Customers  LEFT JOIN Orders  ON Customers.CustomerID = Orders.CustomerID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT INTO Statement",
+        "sql": "SELECT * INTO newtableFROM oldtableWHERE 1 = 0;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME() Function",
+        "sql": "SELECT TIME(\"19:30:10\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME() Function",
+        "sql": "SELECT TIME(\"2017-08-15 19:30:10\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME() Function",
+        "sql": "SELECT TIME(\"2017-08-15 19:30:10.000001\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIME() Function",
+        "sql": "SELECT TIME(NULL);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEDIFF() Function",
+        "sql": "SELECT DATEDIFF(year, '2017/08/25', '2011/08/25') AS DateDiff;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEDIFF() Function",
+        "sql": "SELECT DATEDIFF(month, '2017/08/25',    '2011/08/25') AS DateDiff;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server DATEDIFF() Function",
+        "sql": "SELECT DATEDIFF(hour, '2017/08/25 07:00', '2017/08/25 12:45') AS DateDiff;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL BINARY Function",
+        "sql": "SELECT BINARY \"W3Schools.com\";"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL BINARY Function",
+        "sql": "SELECT \"HELLO\" = \"hello\";"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL BINARY Function",
+        "sql": "SELECT BINARY \"HELLO\" = \"hello\";"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNION Operator",
+        "sql": "SELECT column_name(s) FROM table1  UNION  SELECT column_name(s) FROM table2;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNION Operator",
+        "sql": "SELECT column_name(s) FROM table1  UNION ALL  SELECT column_name(s) FROM table2;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNION Operator",
+        "sql": "SELECT City FROM CustomersUNIONSELECT City FROM SuppliersORDER BY City;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNION Operator",
+        "sql": "SELECT City FROM CustomersUNION ALLSELECT City FROM Suppliers  ORDER BY City;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNION Operator",
+        "sql": "SELECT City, Country FROM CustomersWHERE Country='Germany'UNION  SELECT City, Country FROM SuppliersWHERE Country='Germany'ORDER BY City;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNION Operator",
+        "sql": "SELECT City, Country FROM CustomersWHERE Country='Germany'UNION ALL  SELECT City, Country FROM SuppliersWHERE Country='Germany'ORDER BY City;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNION Operator",
+        "sql": "SELECT 'Customer' AS Type, ContactName, City, CountryFROM Customers   UNIONSELECT 'Supplier', ContactName, City, CountryFROM Suppliers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Max() Function",
+        "sql": "SELECT Max(Price) AS LargestPrice FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL IFNULL() Function",
+        "sql": "SELECT IFNULL(NULL, \"W3Schools.com\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL IFNULL() Function",
+        "sql": "SELECT IFNULL(\"Hello\", \"W3Schools.com\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL IFNULL() Function",
+        "sql": "SELECT IFNULL(NULL, 500);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL WEEKOFYEAR() Function",
+        "sql": "SELECT WEEKOFYEAR(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL WEEKOFYEAR() Function",
+        "sql": "SELECT WEEKOFYEAR(\"2017-01-01\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL WEEKOFYEAR() Function",
+        "sql": "SELECT WEEKOFYEAR(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIMEDIFF() Function",
+        "sql": "SELECT TIMEDIFF(\"13:10:11\", \"13:10:10\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIMEDIFF() Function",
+        "sql": "SELECT TIMEDIFF(\"2017-06-25 13:10:11\", \"2017-06-15 13:10:10\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LOG10() Function",
+        "sql": "SELECT LOG10(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LOG10() Function",
+        "sql": "SELECT LOG10(4.5);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server MIN() Function",
+        "sql": "SELECT MIN(Price) AS    SmallestPrice FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LCASE() Function",
+        "sql": "SELECT LCASE(\"SQL Tutorial is FUN!\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LCASE() Function",
+        "sql": "SELECT LCASE(CustomerName) AS LowercaseCustomerNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UPDATE",
+        "sql": "UPDATE Customers  SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'  WHERE CustomerID = 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UPDATE",
+        "sql": "UPDATE Customers SET ContactName='Juan' WHERE Country='Mexico';"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL QUARTER() Function",
+        "sql": "SELECT QUARTER(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL QUARTER() Function",
+        "sql": "SELECT QUARTER(\"2017-01-01 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL QUARTER() Function",
+        "sql": "SELECT QUARTER(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ASCII() Function",
+        "sql": "SELECT ASCII(CustomerName) AS NumCodeOfFirstCharFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT TOP 3 * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT * FROM CustomersLIMIT 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT * FROM CustomersWHERE ROWNUM  <= 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SYSTEM_USER() Function",
+        "sql": "SELECT SYSTEM_USER();"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UPDATE Statement",
+        "sql": "UPDATE Customers  SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'  WHERE CustomerID = 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UPDATE Statement",
+        "sql": "UPDATE Customers SET ContactName='Juan' WHERE Country='Mexico';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UPDATE Statement",
+        "sql": "UPDATE Customers SET ContactName='Juan';"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOCALTIMESTAMP() Function",
+        "sql": "SELECT    LOCALTIMESTAMP();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOCALTIMESTAMP() Function",
+        "sql": "SELECT    LOCALTIMESTAMP() + 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Sqr() Function",
+        "sql": "SELECT Sqr(64) AS SqrNum;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access CurDir() Function",
+        "sql": "CurDir()CurDir(\"D\")"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server MONTH() Function",
+        "sql": "SELECT MONTH('2017/08/25') AS Month;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server MONTH() Function",
+        "sql": "SELECT MONTH('2017/05/25 09:08') AS Month;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATEDIFF() Function",
+        "sql": "SELECT DATEDIFF(\"2017-06-25\", \"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATEDIFF() Function",
+        "sql": "SELECT DATEDIFF(\"2017-06-25 09:34:21\", \"2017-06-15 15:25:35\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL DATEDIFF() Function",
+        "sql": "SELECT DATEDIFF(\"2017-01-01\",    \"2016-12-24\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Val() Function",
+        "sql": "SELECT Val(PostalCode) FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURDATE() Function",
+        "sql": "SELECT CURDATE();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURDATE() Function",
+        "sql": "SELECT CURDATE() + 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server RIGHT() Function",
+        "sql": "SELECT RIGHT('SQL Tutorial', 3) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server RIGHT() Function",
+        "sql": "SELECT RIGHT(CustomerName, 5) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server RIGHT() Function",
+        "sql": "SELECT RIGHT('SQL Tutorial', 100) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access LCase() Function",
+        "sql": "SELECT LCASE(CustomerName) AS LowercaseCustomerNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CASE",
+        "sql": "SELECT OrderID, Quantity,CASE    WHEN Quantity > 30    THEN 'The quantity is greater than 30'    WHEN Quantity =    30 THEN 'The quantity is 30'    ELSE 'The quantity is under 30'ENDFROM OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CASE",
+        "sql": "SELECT CustomerName, City, CountryFROM CustomersORDER BY(CASE       WHEN City IS NULL THEN Country    ELSE CityEND);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CAST() Function",
+        "sql": "SELECT    CAST(\"2017-08-29\" AS DATE);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CAST() Function",
+        "sql": "SELECT CAST(150 AS CHAR);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CAST() Function",
+        "sql": "SELECT CAST(\"14:06:10\" AS TIME);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CAST() Function",
+        "sql": "SELECT CAST(5-10 AS SIGNED);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CONVERT() Function",
+        "sql": "SELECT CONVERT(int, 25.65);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CONVERT() Function",
+        "sql": "SELECT CONVERT(varchar, 25.65);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CONVERT() Function",
+        "sql": "SELECT CONVERT(datetime, '2017-08-25');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CONVERT() Function",
+        "sql": "SELECT CONVERT(varchar,    '2017-08-25', 101);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server COS() Function",
+        "sql": "SELECT COS(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server COS() Function",
+        "sql": "SELECT COS(PI());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP DEFAULT",
+        "sql": "ALTER TABLE Persons ALTER COLUMN City DROP DEFAULT;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP DEFAULT",
+        "sql": "ALTER TABLE Persons ALTER City DROP DEFAULT;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server STR() Function",
+        "sql": "SELECT STR(185);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server STR() Function",
+        "sql": "SELECT STR(185.5);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server STR() Function",
+        "sql": "SELECT STR(185.476, 6, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MIN() Function",
+        "sql": "SELECT MIN(Price) AS    SmallestPrice FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LAST_INSERT_ID() Function",
+        "sql": "SELECT LAST_INSERT_ID();"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ALTER COLUMN",
+        "sql": "ALTER TABLE EmployeesALTER COLUMN BirthDate    year;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ATN2() Function",
+        "sql": "SELECT ATN2(0.50, 1);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ATN2() Function",
+        "sql": "SELECT ATN2(-0.8, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server GETDATE() Function",
+        "sql": "SELECT    GETDATE();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIMESTAMP() Function",
+        "sql": "SELECT TIMESTAMP(\"2017-07-23\",  \"13:10:11\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TIMESTAMP() Function",
+        "sql": "SELECT TIMESTAMP(\"2017-07-23\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SOUNDEX() Function",
+        "sql": "SELECT SOUNDEX('Juice'), SOUNDEX('Jucy');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SOUNDEX() Function",
+        "sql": "SELECT SOUNDEX('Juice'), SOUNDEX('Banana');"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONCAT() Function",
+        "sql": "SELECT CONCAT(\"SQL \", \"Tutorial \", \"is \", \"fun!\") AS ConcatenatedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CONCAT() Function",
+        "sql": "SELECT CONCAT(Address, \" \", PostalCode, \" \", City) AS AddressFROM    Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL POWER() Function",
+        "sql": "SELECT POWER(4, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL POWER() Function",
+        "sql": "SELECT POWER(8, 3);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MAKEDATE() Function",
+        "sql": "SELECT MAKEDATE(2017, 3);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MAKEDATE() Function",
+        "sql": "SELECT MAKEDATE(2017, 175);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MAKEDATE() Function",
+        "sql": "SELECT MAKEDATE(2017, 100);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MAKEDATE() Function",
+        "sql": "SELECT MAKEDATE(2017, 366);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access MonthName() Function",
+        "sql": "SELECT MonthName(3);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access MonthName() Function",
+        "sql": "SELECT WeekdayName(3, true);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE Constraint",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL UNIQUE,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE Constraint",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     UNIQUE (ID) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE Constraint",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     CONSTRAINT UC_Person UNIQUE (ID,LastName) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE Constraint",
+        "sql": "ALTER TABLE Persons ADD UNIQUE (ID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE Constraint",
+        "sql": "ALTER TABLE Persons ADD CONSTRAINT UC_Person UNIQUE (ID,LastName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE Constraint",
+        "sql": "ALTER TABLE Persons DROP INDEX UC_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE Constraint",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT UC_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SEC_TO_TIME() Function",
+        "sql": "SELECT SEC_TO_TIME(1);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SEC_TO_TIME() Function",
+        "sql": "SELECT SEC_TO_TIME(-6897);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AS",
+        "sql": "SELECT CustomerID AS ID, CustomerName AS Customer  FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AS",
+        "sql": "SELECT CustomerName AS Customer, ContactName AS [Contact Person]  FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AS",
+        "sql": "SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country    AS Address  FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AS",
+        "sql": "SELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Address FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AS",
+        "sql": "SELECT o.OrderID, o.OrderDate, c.CustomerNameFROM Customers AS c, Orders AS oWHERE c.CustomerName=\"Around the Horn\" AND c.CustomerID=o.CustomerID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server USER_NAME() Function",
+        "sql": "SELECT USER_NAME();"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server USER_NAME() Function",
+        "sql": "SELECT USER_NAME(1);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RPAD() Function",
+        "sql": "SELECT RPAD(\"SQL Tutorial\",    20, \"ABC\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RPAD() Function",
+        "sql": "SELECT    RPAD(CustomerName, 30, \"ABC\") AS RightPadCustomerNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DateSerial() Function",
+        "sql": "SELECT DateSerial(2017, 4, 20);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access DateSerial() Function",
+        "sql": "SELECT DateSerial(2017-10, 4-1, 20-5);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access StrComp() Function",
+        "sql": "SELECT    StrComp(\"SQL Tutorial\", \"SQL Tutorial\") AS CompString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access StrComp() Function",
+        "sql": "SELECT StrComp(\"SQL Tutorial\", \"SQL\") AS CompString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access StrComp() Function",
+        "sql": "SELECT StrComp(\"SQL\", \"SQL Tutorial\") AS CompString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT DISTINCT Statement",
+        "sql": "SELECT DISTINCT Country FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT DISTINCT Statement",
+        "sql": "SELECT Country FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT DISTINCT Statement",
+        "sql": "SELECT COUNT(DISTINCT Country) FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT DISTINCT Statement",
+        "sql": "SELECT Count(*) AS DistinctCountriesFROM (SELECT DISTINCT Country FROM Customers);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP VIEW",
+        "sql": "DROP VIEW [Brazil Customers];"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Environ() Function",
+        "sql": "SELECT Environ(1);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT TOP 3 * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT * FROM CustomersLIMIT 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT * FROM CustomersWHERE ROWNUM  <= 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL VERSION() Function",
+        "sql": "SELECT VERSION();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FIELD() Function",
+        "sql": "SELECT FIELD(\"q\", \"s\", \"q\", \"l\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FIELD() Function",
+        "sql": "SELECT FIELD(\"c\", \"a\", \"b\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FIELD() Function",
+        "sql": "SELECT FIELD(\"Q\", \"s\", \"q\", \"l\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FIELD() Function",
+        "sql": "SELECT FIELD(5, 0, 1, 2, 3, 4, 5);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ABS() Function",
+        "sql": "SELECT Abs(-243.5) AS AbsNum;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RAND() Function",
+        "sql": "SELECT RAND();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RAND() Function",
+        "sql": "SELECT RAND(6);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RAND() Function",
+        "sql": "SELECT RAND()*(10-5)+5;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL RAND() Function",
+        "sql": "SELECT FLOOR(RAND()*(10-5+1)+5);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MONTHNAME() Function",
+        "sql": "SELECT MONTHNAME(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MONTHNAME() Function",
+        "sql": "SELECT MONTHNAME(\"2017-06-15 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MONTHNAME() Function",
+        "sql": "SELECT MONTHNAME(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL INSTR() Function",
+        "sql": "SELECT INSTR(\"W3Schools.com\", \"3\") AS MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL INSTR() Function",
+        "sql": "SELECT INSTR(\"W3Schools.com\", \"COM\") AS MatchPosition;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL INSTR() Function",
+        "sql": "SELECT INSTR(CustomerName, \"a\")FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ANY",
+        "sql": "SELECT ProductNameFROM ProductsWHERE ProductID = ANY (SELECT    ProductID FROM OrderDetails WHERE Quantity = 10);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ANY",
+        "sql": "SELECT ProductNameFROM ProductsWHERE ProductID = ANY (SELECT ProductID    FROM OrderDetails WHERE Quantity > 99);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL COUNT() Function",
+        "sql": "SELECT COUNT(*)FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL COUNT() Function",
+        "sql": "SELECT COUNT(ProductName)FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL COUNT() Function",
+        "sql": "SELECT COUNT(ProductID)FROM ProductsWHERE Price > 20;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL COUNT() Function",
+        "sql": "SELECT COUNT(DISTINCT Price)FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL COUNT() Function",
+        "sql": "SELECT COUNT(*) AS [Number of records]FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL COUNT() Function",
+        "sql": "SELECT COUNT(*) AS [Number of records], CategoryIDFROM ProductsGROUP    BY CategoryID;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LENGTH() Function",
+        "sql": "SELECT LENGTH(\"SQL Tutorial\") AS LengthOfString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LENGTH() Function",
+        "sql": "SELECT LENGTH(CustomerName) AS LengthOfNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SIGN() Function",
+        "sql": "SELECT SIGN(255.5);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SIGN() Function",
+        "sql": "SELECT SIGN(-12);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access StrReverse() Function",
+        "sql": "SELECT StrReverse(\"SQL Tutorial\") AS StringReverse;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access IsDate() Function",
+        "sql": "SELECT    IsDate(Now());"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access IsDate() Function",
+        "sql": "SELECT   IsDate(\"Hello\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access IsDate() Function",
+        "sql": "SELECT   IsDate(\"August 25, 2017\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access IsDate() Function",
+        "sql": "SELECT IsDate(#25/8/2017#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Sum() Function",
+        "sql": "SELECT Sum(Quantity) AS TotalItemsOrdered FROM OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOG() Function",
+        "sql": "SELECT LOG(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOG() Function",
+        "sql": "SELECT LOG(2, 4);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL PI() Function",
+        "sql": "SELECT PI();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL COS() Function",
+        "sql": "SELECT COS(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL COS() Function",
+        "sql": "SELECT COS(PI());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LEFT() Function",
+        "sql": "SELECT LEFT('SQL Tutorial', 3) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LEFT() Function",
+        "sql": "SELECT LEFT(CustomerName, 5) AS ExtractStringFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LEFT() Function",
+        "sql": "SELECT LEFT('SQL Tutorial', 100) AS ExtractString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL WEEK() Function",
+        "sql": "SELECT WEEK(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL WEEK() Function",
+        "sql": "SELECT WEEK(\"2017-10-25\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL WEEK() Function",
+        "sql": "SELECT WEEK(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DELETE",
+        "sql": "DELETE FROM Customers  WHERE CustomerName='Alfreds Futterkiste';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DELETE",
+        "sql": "DELETE FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL EXTRACT() Function",
+        "sql": "SELECT EXTRACT(MONTH FROM \"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL EXTRACT() Function",
+        "sql": "SELECT EXTRACT(WEEK FROM \"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL EXTRACT() Function",
+        "sql": "SELECT EXTRACT(MINUTE FROM \"2017-06-15 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL EXTRACT() Function",
+        "sql": "SELECT EXTRACT(YEAR_MONTH FROM \"2017-06-15 09:34:21\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL EXP() Function",
+        "sql": "SELECT EXP(1);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL EXP() Function",
+        "sql": "SELECT EXP(2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access StrConv() Function",
+        "sql": "SELECT StrConv(\"SQL Tutorial is cool\", 1) AS ConvertedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access StrConv() Function",
+        "sql": "SELECT StrConv(\"SQL Tutorial is cool\", 2) AS ConvertedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access StrConv() Function",
+        "sql": "SELECT StrConv(\"SQL Tutorial is cool\", 3) AS ConvertedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Cos() Function",
+        "sql": "SELECT Cos(5) AS CosNum;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ORDER BY Keyword",
+        "sql": "SELECT * FROM Products  ORDER BY Price;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ORDER BY Keyword",
+        "sql": "SELECT * FROM Products  ORDER BY Price DESC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ORDER BY Keyword",
+        "sql": "SELECT * FROM Products  ORDER BY ProductName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ORDER BY Keyword",
+        "sql": "SELECT * FROM Products  ORDER BY ProductName DESC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ORDER BY Keyword",
+        "sql": "SELECT * FROM Customers  ORDER BY Country, CustomerName;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL ORDER BY Keyword",
+        "sql": "SELECT * FROM Customers  ORDER BY Country ASC, CustomerName DESC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server STUFF() Function",
+        "sql": "SELECT STUFF('SQL Tutorial', 1, 3, 'HTML');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server STUFF() Function",
+        "sql": "SELECT STUFF('SQL Tutorial!', 13, 1, ' is fun!');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CONSTRAINT",
+        "sql": "ALTER TABLE PersonsADD CONSTRAINT PK_Person PRIMARY KEY (ID,LastName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT UC_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP INDEX UC_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT PK_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP PRIMARY KEY;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CONSTRAINT",
+        "sql": "ALTER TABLE Orders DROP CONSTRAINT FK_PersonOrder;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CONSTRAINT",
+        "sql": "ALTER TABLE Orders DROP FOREIGN KEY FK_PersonOrder;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT CHK_PersonAge;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CONSTRAINT",
+        "sql": "ALTER TABLE Persons DROP CHECK CHK_PersonAge;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL STRCMP() Function",
+        "sql": "SELECT STRCMP(\"SQL Tutorial\",    \"SQL Tutorial\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL STRCMP() Function",
+        "sql": "SELECT STRCMP(\"SQL Tutorial\",    \"HTML Tutorial\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ASCII() Function",
+        "sql": "SELECT ASCII(CustomerName) AS NumCodeOfFirstCharFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT Constraint",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     City varchar(255) DEFAULT 'Sandnes' );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT Constraint",
+        "sql": "CREATE TABLE Orders (     ID int NOT NULL,     OrderNumber int NOT NULL,     OrderDate date DEFAULT GETDATE() );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT Constraint",
+        "sql": "ALTER TABLE Persons ALTER City SET DEFAULT 'Sandnes';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT Constraint",
+        "sql": "ALTER TABLE PersonsADD CONSTRAINT df_City DEFAULT 'Sandnes' FOR City;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT Constraint",
+        "sql": "ALTER TABLE Persons ALTER COLUMN City SET DEFAULT 'Sandnes';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT Constraint",
+        "sql": "ALTER TABLE Persons MODIFY City DEFAULT 'Sandnes';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT Constraint",
+        "sql": "ALTER TABLE Persons ALTER City DROP DEFAULT;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DEFAULT Constraint",
+        "sql": "ALTER TABLE Persons ALTER COLUMN City DROP DEFAULT;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server RADIANS() Function",
+        "sql": "SELECT RADIANS(180);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server RADIANS() Function",
+        "sql": "SELECT RADIANS(-45);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL PERIOD_ADD() Function",
+        "sql": "SELECT PERIOD_ADD(201703, 5);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL PERIOD_ADD() Function",
+        "sql": "SELECT PERIOD_ADD(201703, 15);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL PERIOD_ADD() Function",
+        "sql": "SELECT PERIOD_ADD(201703, -2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL MIN() and MAX() Functions",
+        "sql": "SELECT MIN(Price)FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL MIN() and MAX() Functions",
+        "sql": "SELECT MAX(Price)FROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL MIN() and MAX() Functions",
+        "sql": "SELECT MIN(Price) AS SmallestPriceFROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL MIN() and MAX() Functions",
+        "sql": "SELECT MIN(Price) AS SmallestPrice, CategoryIDFROM ProductsGROUP BY CategoryID;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Weekday() Function",
+        "sql": "SELECT Weekday(#05/17/2017#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Weekday() Function",
+        "sql": "SELECT Weekday(Date());"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Weekday() Function",
+        "sql": "SELECT Weekday(#05/17/2017#, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL GROUP BY Statement",
+        "sql": "SELECT column_name(s)   FROM table_name   WHERE condition   GROUP BY column_name(s)ORDER BY column_name(s);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL GROUP BY Statement",
+        "sql": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL GROUP BY Statement",
+        "sql": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country   ORDER BY COUNT(CustomerID) DESC;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL GROUP BY Statement",
+        "sql": "SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS NumberOfOrders FROM    OrdersLEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID   GROUP BY ShipperName;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TO_DAYS() Function",
+        "sql": "SELECT TO_DAYS(\"2017-06-20\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TO_DAYS() Function",
+        "sql": "SELECT TO_DAYS(\"2017-06-20 09:34:00\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE",
+        "sql": "CREATE TABLE Persons (     PersonID int,     LastName varchar(255),     FirstName varchar(255),     Address varchar(255),     City varchar(255)  );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE TABLE",
+        "sql": "CREATE TABLE TestTable ASSELECT customername, contactnameFROM    customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL EXISTS Operator",
+        "sql": "SELECT column_name(s)   FROM table_name   WHERE    EXISTS(SELECT column_name FROM table_name WHERE   condition);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL EXISTS Operator",
+        "sql": "SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM    Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL EXISTS Operator",
+        "sql": "SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM    Products WHERE Products.SupplierID = Suppliers.supplierID AND Price = 22);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Joins",
+        "sql": "SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDateFROM OrdersINNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Second() Function",
+        "sql": "SELECT    Second(#14:48:23#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Second() Function",
+        "sql": "SELECT    Second(Now());"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Second() Function",
+        "sql": "SELECT    Second(#24/10/2016 11:18:34 PM#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TRUNCATE() Function",
+        "sql": "SELECT TRUNCATE(135.375, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL TRUNCATE() Function",
+        "sql": "SELECT TRUNCATE(345.156,    0);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Atn() Function",
+        "sql": "SELECT Atn(5) AS AtnNum;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Tutorial",
+        "sql": "SELECT * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL UNIQUE,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     UNIQUE (ID) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE",
+        "sql": "CREATE TABLE Persons (     ID int NOT NULL,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     CONSTRAINT UC_Person UNIQUE (ID,LastName) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE",
+        "sql": "ALTER TABLE Persons ADD UNIQUE (ID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE",
+        "sql": "ALTER TABLE Persons ADD CONSTRAINT UC_Person UNIQUE (ID,LastName);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE",
+        "sql": "ALTER TABLE Persons DROP INDEX UC_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL UNIQUE",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT UC_Person;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CURRENT_USER Function",
+        "sql": "SELECT CURRENT_USER;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Format() Function",
+        "sql": "SELECT Format(0.5, \"Percent\") AS FormattedNum;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Format() Function",
+        "sql": "SELECT Format(Price, \"Currency\") AS FormattedPriceFROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SYSTEM_USER Function",
+        "sql": "SELECT SYSTEM_USER;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SESSIONPROPERTY() Function",
+        "sql": "SELECT SESSIONPROPERTY('ANSI_NULLS');"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Month() Function",
+        "sql": "SELECT Month(#05/17/2017#);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Month() Function",
+        "sql": "SELECT Month(Date());"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Month() Function",
+        "sql": "SELECT Month(BirthDate) FROM Employees;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Chr() Function",
+        "sql": "SELECT Chr(65) AS CodeToCharacter;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBSTRING_INDEX() Function",
+        "sql": "SELECT SUBSTRING_INDEX(\"www.w3schools.com\", \".\", 1);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SUBSTRING_INDEX() Function",
+        "sql": "SELECT SUBSTRING_INDEX(\"www.w3schools.com\", \".\", 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CHARACTER_LENGTH() Function",
+        "sql": "SELECT CHARACTER_LENGTH(\"SQL Tutorial\") AS LengthOfString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CHARACTER_LENGTH() Function",
+        "sql": "SELECT CHARACTER_LENGTH(CustomerName) AS LengthOfNameFROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FROM_DAYS() Function",
+        "sql": "SELECT FROM_DAYS(685467);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL FROM_DAYS() Function",
+        "sql": "SELECT FROM_DAYS(780500);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server POWER() Function",
+        "sql": "SELECT POWER(4, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server POWER() Function",
+        "sql": "SELECT POWER(8, 3);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL IF() Function",
+        "sql": "SELECT    IF(500<1000, \"YES\", \"NO\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL IF() Function",
+        "sql": "SELECT IF(500<1000, 5, 10);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL IF() Function",
+        "sql": "SELECT IF(STRCMP(\"hello\",\"bye\") = 0, \"YES\", \"NO\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL IF() Function",
+        "sql": "SELECT OrderID, Quantity, IF(Quantity>10, \"MORE\", \"LESS\")FROM    OrderDetails;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INNER JOIN",
+        "sql": "SELECT ProductID, ProductName, CategoryNameFROM ProductsINNER JOIN    Categories ON Products.CategoryID = Categories.CategoryID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INNER JOIN",
+        "sql": "SELECT Products.ProductID, Products.ProductName, Categories.CategoryName FROM Products INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INNER JOIN",
+        "sql": "SELECT Products.ProductID, Products.ProductName, Categories.CategoryName FROM Products JOIN Categories ON Products.CategoryID = Categories.CategoryID;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INNER JOIN",
+        "sql": "SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperNameFROM    ((OrdersINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)   INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server REPLACE() Function",
+        "sql": "SELECT REPLACE('SQL Tutorial', 'T', 'M');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server REPLACE() Function",
+        "sql": "SELECT REPLACE('SQL Tutorial', 'SQL', 'HTML');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server REPLACE() Function",
+        "sql": "SELECT REPLACE('ABC ABC ABC', 'a', 'c');"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Str() Function",
+        "sql": "SELECT    Str(42) AS ConvertToString;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL IN",
+        "sql": "SELECT * FROM Customers   WHERE Country IN ('Germany', 'France', 'UK');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL IN",
+        "sql": "SELECT * FROM Customers   WHERE Country NOT IN ('Germany', 'France', 'UK');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL IN",
+        "sql": "SELECT * FROM Customers   WHERE Country IN (SELECT Country FROM Suppliers);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Introduction",
+        "sql": "SELECT * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP TABLE Statement",
+        "sql": "DROP TABLE table_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP TABLE Statement",
+        "sql": "DROP TABLE Shippers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL DROP TABLE Statement",
+        "sql": "TRUNCATE TABLE table_name;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT TOP 3 * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT * FROM CustomersLIMIT 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT TOP, LIMIT, ROWNUM",
+        "sql": "SELECT * FROM CustomersWHERE ROWNUM  <= 3;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO",
+        "sql": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO",
+        "sql": "INSERT INTO Customers (CustomerName, City, Country) VALUES ('Cardinal', 'Stavanger', 'Norway');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CEILING() Function",
+        "sql": "SELECT CEILING(25.75) AS CeilValue;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CEILING() Function",
+        "sql": "SELECT CEILING(25) AS CeilValue;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server CEILING() Function",
+        "sql": "SELECT CEILING(-13.5) AS CeilValue;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ATAN() Function",
+        "sql": "SELECT ATAN(2.5);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ATAN() Function",
+        "sql": "SELECT ATAN(-45.01);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, CREATE OR REPLACE VIEW, DROP VIEW",
+        "sql": "CREATE VIEW [Brazil    Customers] AS SELECT    CustomerName, ContactName FROM Customers WHERE    Country = \"Brazil\";"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, CREATE OR REPLACE VIEW, DROP VIEW",
+        "sql": "SELECT * FROM [Brazil    Customers];"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, CREATE OR REPLACE VIEW, DROP VIEW",
+        "sql": "CREATE OR REPLACE VIEW [Brazil Customers] AS SELECT CustomerName, ContactName, City FROM Customers WHERE Country = \"Brazil\";"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CREATE VIEW, CREATE OR REPLACE VIEW, DROP VIEW",
+        "sql": "DROP VIEW [Brazil Customers];"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL GREATEST() Function",
+        "sql": "SELECT GREATEST(3, 12, 34, 8, 25);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL GREATEST() Function",
+        "sql": "SELECT GREATEST(\"w3Schools.com\", \"microsoft.com\", \"apple.com\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISNULL() Function",
+        "sql": "SELECT ISNULL(NULL, 'W3Schools.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISNULL() Function",
+        "sql": "SELECT ISNULL('Hello', 'W3Schools.com');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISNULL() Function",
+        "sql": "SELECT ISNULL(NULL, 500);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SPACE() Function",
+        "sql": "SELECT    SPACE(10);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ADDTIME() Function",
+        "sql": "SELECT ADDTIME(\"2017-06-15    09:34:21\", \"2\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ADDTIME() Function",
+        "sql": "SELECT ADDTIME(\"2017-06-15    09:34:21.000001\", \"5.000003\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ADDTIME() Function",
+        "sql": "SELECT ADDTIME(\"2017-06-15 09:34:21.000001\", \"2:10:5.000003\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ADDTIME() Function",
+        "sql": "SELECT ADDTIME(\"2017-06-15    09:34:21.000001\", \"5 2:10:5.000003\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ADDTIME() Function",
+        "sql": "SELECT ADDTIME(\"09:34:21.000001\", \"2:10:5.000003\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MINUTE() Function",
+        "sql": "SELECT MINUTE(\"2017-06-20 09:34:00\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MINUTE() Function",
+        "sql": "SELECT MINUTE(\"23:59:59\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL EXEC",
+        "sql": "EXEC SelectAllCustomers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AUTO INCREMENT a Field",
+        "sql": "CREATE TABLE Persons (        Personid int NOT NULL AUTO_INCREMENT,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int,     PRIMARY KEY (Personid) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AUTO INCREMENT a Field",
+        "sql": "ALTER TABLE Persons AUTO_INCREMENT=100;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AUTO INCREMENT a Field",
+        "sql": "INSERT INTO Persons (FirstName,LastName) VALUES ('Lars','Monsen');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AUTO INCREMENT a Field",
+        "sql": "CREATE TABLE Persons (        Personid int IDENTITY(1,1) PRIMARY KEY,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AUTO INCREMENT a Field",
+        "sql": "INSERT INTO Persons (FirstName,LastName) VALUES ('Lars','Monsen');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AUTO INCREMENT a Field",
+        "sql": "CREATE TABLE Persons (        Personid AUTOINCREMENT PRIMARY KEY,     LastName varchar(255) NOT NULL,     FirstName varchar(255),     Age int );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AUTO INCREMENT a Field",
+        "sql": "INSERT INTO Persons (FirstName,LastName) VALUES ('Lars','Monsen');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AUTO INCREMENT a Field",
+        "sql": "CREATE SEQUENCE seq_person MINVALUE 1 START WITH 1 INCREMENT BY 1 CACHE 10;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL AUTO INCREMENT a Field",
+        "sql": "INSERT INTO Persons (Personid,FirstName,LastName) VALUES (seq_person.nextval,'Lars','Monsen');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO SELECT",
+        "sql": "INSERT INTO Customers (CustomerName,    City, Country)  SELECT SupplierName, City, Country FROM Suppliers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO SELECT",
+        "sql": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode,    Country)SELECT SupplierName, ContactName, Address, City, PostalCode,    Country FROM Suppliers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL INSERT INTO SELECT",
+        "sql": "INSERT INTO Customers (CustomerName,    City, Country)  SELECT SupplierName, City, Country FROM SuppliersWHERE Country='Germany';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT",
+        "sql": "SELECT CustomerName, City FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT",
+        "sql": "SELECT * FROM Customers;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access IsNull() Function",
+        "sql": "SELECT IsNull(null);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access IsNull() Function",
+        "sql": "SELECT IsNull(\"Hello\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access IsNull() Function",
+        "sql": "SELECT IsNull(0);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BACKUP DATABASE Statement",
+        "sql": "BACKUP DATABASE databasenameTO DISK = 'filepath';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BACKUP DATABASE Statement",
+        "sql": "BACKUP DATABASE databasenameTO DISK = 'filepath'WITH    DIFFERENTIAL;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BACKUP DATABASE Statement",
+        "sql": "BACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL BACKUP DATABASE Statement",
+        "sql": "BACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak'WITH    DIFFERENTIAL;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL YEARWEEK() Function",
+        "sql": "SELECT YEARWEEK(\"2017-06-15\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL YEARWEEK() Function",
+        "sql": "SELECT YEARWEEK(\"2017-10-25\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL YEARWEEK() Function",
+        "sql": "SELECT YEARWEEK(CURDATE());"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK",
+        "sql": "CREATE TABLE Persons (     Age int,     CHECK (Age>=18) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK",
+        "sql": "CREATE TABLE Persons (     Age int CHECK (Age>=18) );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK",
+        "sql": "CREATE TABLE Persons (     Age int,     City varchar(255),     CONSTRAINT CHK_Person CHECK (Age>=18 AND City='Sandnes') );"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK",
+        "sql": "ALTER TABLE Persons ADD CHECK (Age>=18);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK",
+        "sql": "ALTER TABLE Persons ADD CONSTRAINT CHK_PersonAge CHECK (Age>=18 AND City='Sandnes');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK",
+        "sql": "ALTER TABLE Persons DROP CONSTRAINT CHK_PersonAge;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL CHECK",
+        "sql": "ALTER TABLE Persons DROP CHECK CHK_PersonAge;"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISDATE() Function",
+        "sql": "SELECT ISDATE('2017-08-25');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISDATE() Function",
+        "sql": "SELECT ISDATE('2017');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server ISDATE() Function",
+        "sql": "SELECT ISDATE('Hello world!');"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server LTRIM() Function",
+        "sql": "SELECT LTRIM('     SQL Tutorial') AS LeftTrimmedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access LTrim() Function",
+        "sql": "SELECT LTrim(\"    SQL Tutorial\") AS    LeftTrimmedString;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURRENT_DATE() Function",
+        "sql": "SELECT CURRENT_DATE();"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CURRENT_DATE() Function",
+        "sql": "SELECT CURRENT_DATE() + 1;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CEIL() Function",
+        "sql": "SELECT CEIL(25.75);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL CEIL() Function",
+        "sql": "SELECT CEIL(25);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SQRT() Function",
+        "sql": "SELECT SQRT(64);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL SQRT() Function",
+        "sql": "SELECT SQRT(13);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT",
+        "sql": "BACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak';"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL SELECT",
+        "sql": "BACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak'WITH    DIFFERENTIAL;"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Round() Function",
+        "sql": "SELECT ProductName, Price, Round(Price, 1) AS RoundedPriceFROM Products;"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ATAN() Function",
+        "sql": "SELECT ATAN(2.5);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL ATAN() Function",
+        "sql": "SELECT ATAN(-0.8, 2);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOG2() Function",
+        "sql": "SELECT LOG2(6);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL LOG2() Function",
+        "sql": "SELECT LOG2(64);"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MICROSECOND() Function",
+        "sql": "SELECT MICROSECOND(\"2017-06-20 09:34:00.000023\");"
+    },
+    {
+        "prompt": "Generate SQL query for: MySQL MICROSECOND() Function",
+        "sql": "SELECT MICROSECOND(\"23:59:59.000045\");"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SQRT() Function",
+        "sql": "SELECT SQRT(64);"
+    },
+    {
+        "prompt": "Generate SQL query for: SQL Server SQRT() Function",
+        "sql": "SELECT SQRT(13);"
+    },
+    {
+        "prompt": "Generate SQL query for: MS Access Sgn() Function",
+        "sql": "SELECT Sgn(243.5) AS SgnNum;"
+    }
+]
