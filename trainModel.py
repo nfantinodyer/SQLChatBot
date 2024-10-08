@@ -13,7 +13,7 @@ if use_cuda:
     print("Using CUDA")
 
 class SQLDataset(Dataset):
-    def __init__(self, tokenizer, file_path='CodingBot/trainingData.json', max_len=512):
+    def __init__(self, tokenizer, file_path='trainingData.json', max_len=512):
         self.max_len = max_len
         self.tokenizer = tokenizer
         try:
@@ -62,7 +62,7 @@ scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0, num_t
 scaler = torch.amp.GradScaler(device=device) if use_cuda else None
 
 model.train()
-for epoch in range(3):
+for epoch in range(4):
     for batch in loader:
         optimizer.zero_grad()
         input_ids = batch['input_ids'].to(device)
@@ -87,5 +87,5 @@ for epoch in range(3):
         scheduler.step()
         print(f"Epoch {epoch+1}, Loss: {loss.item()}")
 
-model.save_pretrained('CodingBot/fine_tuned_t5_sql')
-tokenizer.save_pretrained('CodingBot/fine_tuned_t5_sql')
+model.save_pretrained('fine_tuned_t5_sql')
+tokenizer.save_pretrained('fine_tuned_t5_sql')
